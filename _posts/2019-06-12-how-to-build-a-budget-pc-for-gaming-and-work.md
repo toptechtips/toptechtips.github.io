@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Build a Gaming PC for £300
-subtitle: ...and is it worth it?
+title: Build a Gaming PC for under £300
+subtitle: whilst I try to persuade you to spend a bit more for the right reasons...
 image: /img/hello_world.jpeg
 ---
 
@@ -13,7 +13,7 @@ Welcome to my first blog post!
 
 Throughout the years, computing power has continued to increase whilst "price-per-performance” continues to decrease. There has never been a better time to build a computer!
 
-If this is your first time building a computer, do not fret! This build was also **my first ever computer build** and for once, I didn't break anything!
+If this is your first time building a computer, do not fret! This build was also my first ever computer build and for once, I didn't break anything!
 
 <br>
 
@@ -116,8 +116,109 @@ One of the cheapest I can recommend is the ASRock A320M-HDV which comes in at £
   </div>
 </div>
 
-#### RAM
+#### 3. RAM
+The current latest type of RAM available is DDR4, which boasts higher clock speed frequencies, better performance whilst reducing power consumption.
+
+For a gaming build you should have at least 8GB of RAM, although I would recommend 16GB. The Ryzen APU listed above takes up to 2GB of the RAM and uses it as graphics memory. Leaving you with 6GB of RAM to run your Operating System and play your game.
+
+A lot of modern game consume can a lot of graphics memory and RAM which can actually bottleneck gaming performance. To prove my point - when I first built my PC (using my recommended parts list) I had opted for 8GB of Corsair DDR4 2400Mhz RAM. I tried to play [Tom Clancy's division 2](https://tomclancy-thedivision.ubisoft.com/game/sv-se/home) at lowest settings at 720p. I was struggling to achieve higher than 30-40fps... and the frame drops were quite annoying.
+
+I also benchmarked my AMD Ryzen 2400G with [Unigine Heaven](https://benchmark.unigine.com/heaven) and was scroing less than 1800. After upgrading to 16GB Corsair DDR4 3000MHz RAM, I was easily scoring over 3000 and was able to get 50-60FPS consistently on Tom Clancy's division 2 and was even able to play at 1080p.
+
+There are other factors to consider, like RAM Timings and RAM CAS Latency, but for now we will keep it simple and stick with the basics. Here's an awesome [guide to choosing RAM](https://www.gamingscan.com/how-to-choose-ram/)
+
+*[HTML]:
+<div class="row">
+  <div class="col-sm-4 col-md-4 col-xs-6">
+    <div class="thumbnail">
+      <img class="" src="/img/cpu/CMK16GX4M2D3000C16.jpg" alt="Corsair CMK16GX4M2D3000C16 Vengeance LPX 16 GB (2 x 8 GB) DDR4 3000 MHz C16 XMP 2.0 High Performance Desktop Memory Kit, Black">
+      <div class="caption">
+        <h5>Corsair CMK16GX4M2D3000C16. 16GB (2x8GB) DDR4 3000 MHz - £68</h5>
+        <p><a target="_blank" href="https://www.amazon.co.uk/Corsair-CMK16GX4M2D3000C16-Vengeance-Performance-Desktop/dp/B07B2Y1N8B/" class="btn btn-primary" role="button">Buy</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-4 col-xs-6">
+    <div class="thumbnail">
+      <img class="" src="/img/cpu/CMK16GX4M2A2400C16R.jpg" alt="Corsair CMK16GX4M2A2400C16R Vengeance LPX 16 GB (2 x 8 GB) DDR4 2400 MHz C16 XMP 2.0 High Performance Desktop Memory Kit, Red">
+      <div class="caption">
+        <h5>Corsair CMK16GX4M2A2400C16R. 16GB (2x8GB) DDR4 2400 MHz C16 - £65</h5>
+        <p><a target="_blank" href="https://www.amazon.co.uk/Corsair-159410-Vengeance-Performance-Desktop/dp/B018EGTEK8/" class="btn btn-primary" role="button">Buy</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-4 col-xs-6">
+    <div class="thumbnail">
+      <img class="" src="/img/cpu/HX424C15FB2-8.jpg" alt="HyperX FURY DDR4 8 GB, 2400 MHz CL15 DIMM XMP - HX424C15FB2/8, Black">
+      <div class="caption">
+        <h5>HyperX FURY HX424C15FB2/8. 8GB (1x8GB) DDR4 2400 MHz C15 - £34</h5>
+        <p><a target="_blank" href="https://www.amazon.co.uk/HyperX-HX424C15FB2-FURY-DDR4-Black/dp/B01D8U2BKA/" class="btn btn-primary" role="button">Buy</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
 #### Storage
+There are many types of storage devices out there but to keep things simple, the 3 major ones are Hard Disks, SSDs or m.2 SATA and m.2 NVMe.
+
+> M.2 – A slimmer form factor for storage drives <br>
+> NVMe – A protocol that lets data be read and written via PCI-E <br>
+> SATA 3 – An older protocol that is typically not as fast as NVMe
+
+Hard Disks are the slowest of them all, but also the cheapest of them all. HDDs normally come in 3.5" and 2.5" (normally laptops) form factors. A 7200 RPM Hard Drive has an average sequential read/write speed of 80-160MB/second
+
+SSDs, unlike HDDs have no moving parts hence are quieter. They normally come in 2.5" form factor and are more durable and use less energy. Having said this, they tend to have a lower max capacity and are much more expensive than HDDs per GB.
+
+If you're not convinced SSDs are a hell of a lot better, check [this](https://windows101tricks.com/wp-content/uploads/2018/03/Comparision-between-HDD-Vs.-SSD-.jpg?escpb=184-0&ezimgfmt=rs:590x863/rscb0/ng:webp/ngcb0) out. A SATA 3 SSD has an average sequential read/write speed up to 550MB/second
+
+m.2 SATA is performs like an SSD but benefits from the it's tiny m.2 size meaning the drive directly plugs into the motherboard - no messy cabling! Their pricing is also similar to SSDs
+
+m.2 NVMe are the fastest of the 3, and also the most expensive. They also have the highest random IO read/write speed (as supposed to sequential read/write speeds). A NVME SSD has an average sequential read/write speed up to 3500MB/second
+
+For the cheapest option, one 1TB hard drive would be enough, but for gaming and that extra speed I would highly recommend SSD. One of the most popular practices is to have either an  120GB - 500GB SSD (2.5" or m.2 form factor) or NVMe for installing the Operating system and applications and programs, whilst another 1TB+ HDD is used for saving larger files like games and media.
+
+
+*[HTML]:
+<div class="row">
+  <div class="col-sm-4 col-md-4 col-xs-6">
+    <div class="thumbnail">
+      <img class="" src="/img/cpu/WDS240G2G0B.jpg" alt="Western Digital WDS240G2G0B WD 240 GB Internal SSD M.2 SATA, Green">
+      <div class="caption">
+        <h5>Western Digital WDS240G2G0B WD 240 GB Internal SSD M.2 SATA - £28</h5>
+        <p><a target="_blank" href="https://www.amazon.co.uk/Western-Digital-WDS240G2G0B-Internal-Green/dp/B078WYS5K6/" class="btn btn-primary" role="button">Buy</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-4 col-xs-6">
+    <div class="thumbnail">
+      <img class="" src="/img/cpu/CT120BX500SSD1.jpg" alt="Crucial BX500 CT120BX500SSD1(Z) 120 GB Internal SSD (3D NAND, SATA, 2.5 Inch)">
+      <div class="caption">
+        <h5>Crucial BX500 120 GB Internal SSD (3D NAND, SATA, 2.5 Inch) - £18</h5>
+        <p><a target="_blank" href="https://www.amazon.co.uk/Crucial-CT120BX500SSD1-Internal-Solid-State/dp/B07G3KRZBY/" class="btn btn-primary" role="button">Buy</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-4 col-xs-6">
+    <div class="thumbnail">
+      <img class="" src="/img/cpu/wd1tbbluehdd.jpg" alt="Western Digital 1 TB PC Hard Drive - Blue">
+      <div class="caption">
+        <h5>Western Digital 1 TB PC Hard Drive - Blue - £36</h5>
+        <p><a target="_blank" href="https://www.amazon.co.uk/WD-TB-PC-Hard-Drive/dp/B0088PUEPK/" class="btn btn-primary" role="button">Buy</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-4 col-xs-6">
+    <div class="thumbnail">
+      <img class="" src="/img/cpu/KingstonSSDA400.jpg" alt="Kingston SSD A400 Solid State Drive (2.5 Inch SATA 3), 240 GB">
+      <div class="caption">
+        <h5>Kingston SSD A400 Solid State Drive (2.5 Inch SATA 3), 240 GB - £27</h5>
+        <p><a target="_blank" href="https://www.amazon.co.uk/Kingston-SA400S37-240G-Solid-State/dp/B01N5IB20Q/" class="btn btn-primary" role="button">Buy</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 #### Power Supply
 #### PC case and Fans
 #### Thermal Paste
