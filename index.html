@@ -6,7 +6,10 @@ use-site-title: true
 show-avatar: false
 ---
 
+<img src="/img/logo.png" alt="">
+
 <div class="posts-list">
+
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | relative_url }}">

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Build a Gaming PC for under £300
-subtitle: whilst I try to persuade you to spend a bit more for the right reasons...
+title: Build a CHEAP gaming PC for under £300
+subtitle: What's the best gaming PC you can make with a low budget?
 image: /img/hello_world.jpeg
 ---
 
@@ -19,16 +19,15 @@ If this is your first time building a computer, do not fret! This build was also
 
 ### Are current budget gaming builds worth it?
 
-**Pros**
-* Very affordable
-* Can play some of the current cpu/intensive games. For example - [Ryzen 5 2400G Vega 11 - 1440p Gaming in 11 Games - Benchmark Test](https://youtu.be/8cz4EkAFOWs) and [Ryzen 5 2400GE vs. Ryzen 5 2400G in 9 Games. Gaming Benchmark Test Comparison](https://www.youtube.com/watch?v=5b6CbJl_Zyg)
-* Doesn’t consume a lot of power
+| Pros        | Cons           |
+| :------------- |:-----------------|
+| Can actually play some of the current cpu/intensive games (See Example below) | Most top-end games will probably be restricted to 30-60FPS, at low quality and low resolutions 720-1080p |
+| Doesn’t consume a lot of power     |     |
+|Very affordable |     |
 
-**Cons**
-* Most top-end games will probably be restricted to 30-60FPS, at low quality and low resolutions 720-1080p
+Example - [Ryzen 5 2400G Vega 11 - 1440p Gaming in 11 Games - Benchmark Test](https://youtu.be/8cz4EkAFOWs) and [Ryzen 5 2400GE vs. Ryzen 5 2400G in 9 Games. Gaming Benchmark Test Comparison](https://www.youtube.com/watch?v=5b6CbJl_Zyg)
 
 <br>
-
 
 ### What you need
 
@@ -220,5 +219,53 @@ For the cheapest option, one 1TB hard drive would be enough, but for gaming and 
 
 
 #### Power Supply
+The Power Supply Unit (PSU) is what will supply your whole computer with power. It's important that you choose a power supply with the correct Wattage. Another factor to consider when choosing a power supply is the efficiency.
+
+> "A power supply with an efficiency rating of 80 percent provides 80 percent of its rated wattage as power to your system, while losing the other 20 percent as heat."
+<br>
+~ [PC Wolrd](https://www.pcworld.com/article/2025425/how-to-pick-the-best-pc-power-supply.html)
+
+Most modern PSUs tend be "80 Plus" certified confirming that those PSUs are at least 80% efficient. However, within the "80 Plus" range there are different efficiency tiers - Bronze, Silver, Gold & Platinum and can be very expensive.
+
+For our goals, a normal 80 Plus or Bronze-tier PSU rated at 450W will suffice. However, I recommend the extra wattage for a little more cost. It saves you from having to buy another PSU if you decided to upgrade your PC.
+
+Check this [power supply calculator](https://outervision.com/power-supply-calculator) or see the estimated wattage when building with [PCPartPicker](https://pcpartpicker.com/).
+
+*[HTML]:
+<div class="row">
+  <div class="col-sm-4 col-md-4 col-xs-6">
+    <div class="thumbnail">
+      <img class="" src="/img/cpu/EVGA500W1.jpg" alt="EVGA 500 W1, 80+ WHITE 500W">
+      <div class="caption">
+        <h5>EVGA 500 W1, 80+ WHITE 500W - £30</h5>
+        <p><a target="_blank" href="https://www.amazon.co.uk/dp/B01E4YRP8W/" class="btn btn-primary" role="button">Buy</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-4 col-xs-6">
+    <div class="thumbnail">
+      <img class="" src="/img/cpu/CorsairVS650650.jpg" alt="Corsair VS650 650 W Active PFC 80 PLUS Certified Power Supply Unit - Black">
+      <div class="caption">
+        <h5>Corsair VS650 650W, 80+ - £45</h5>
+        <p><a target="_blank" href="https://www.amazon.co.uk/Corsair-VS650-Active-Certified-Supply/dp/B078Y32P1W/" class="btn btn-primary" role="button">Buy</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-4 col-xs-6">
+    <div class="thumbnail">
+      <img class="" src="/img/cpu/EVGA450BT.jpg" alt="EVGA 450 BT, 80+ Bronze 450W, Power Supply 100-BT-0450-K3, Black">
+      <div class="caption">
+        <h5>EVGA 450 BT, 80+ Bronze 450W - £43</h5>
+        <p><a target="_blank" href="https://www.amazon.co.uk/EVGA-Bronze-Power-Supply-100-BT-0450-K3/dp/B075173WYY/" class="btn btn-primary" role="button">Buy</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 #### PC case and Fans
 #### Thermal Paste
+
+#### Part's and Equipment list
