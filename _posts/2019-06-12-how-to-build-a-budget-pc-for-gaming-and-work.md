@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Build a CHEAP gaming PC for under £300
+title: BEST gaming PC build for under £300
 subtitle: What's the best gaming PC you can make with a low budget?
-image: /img/hello_world.jpeg
+<!-- image: /img/hello_world.jpeg -->
 ---
 
 {: .box-warning}
