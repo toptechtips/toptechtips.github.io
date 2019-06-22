@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: toptechtips
+title: TOPTECHTIPS
 
 # Short description of your site
 description: "All things tech"
@@ -116,7 +116,7 @@ google_analytics: "UA-142036416-1"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-# disqus: ""
+disqus: "toptechtips-github-io"
 
 # If you want to use JustComments fill with the API Key
 #just-comments: "ABCD-EFGH-IJKL"

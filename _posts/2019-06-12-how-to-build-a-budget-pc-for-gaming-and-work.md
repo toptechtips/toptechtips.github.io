@@ -1,7 +1,10 @@
 ---
 layout: post
 title: How to build the best gaming PC for under £300
-subtitle: and why you should
+subtitle: ...and why you should
+comments: true
+show-avatar: false
+bigimg: /img/pc.png
 <!-- image: /img/hello_world.jpeg -->
 ---
 
@@ -12,9 +15,12 @@ As I've recently, built my first computer I thought I'd base my first post on th
 
 
 
-Throughout the years, computing power has continued to increase whilst "price-per-performance” continues to decrease. There has never been a better time to build a computer!
+Throughout the years, computing power has continued to increase whilst "price-per-performance” continues to decrease. There has never been a better time to build a computer! If this is your first time building a computer, do not fret! This build was also my first ever computer build and for once, I didn't break anything!
 
-If this is your first time building a computer, do not fret! This build was also my first ever computer build and for once, I didn't break anything!
+
+<button type="button" onclick="window.location.href = '#parts-list';" class="btn btn-primary btn-lg" aria-label="Left Align">
+  Just take me to the Part's List
+</button>
 
 <br>
 
@@ -167,7 +173,6 @@ There are many types of storage devices out there but to keep things simple, the
 Hard Disks are the slowest of them all, but also the cheapest of them all. HDDs normally come in 3.5" and 2.5" (normally laptops) form factors. A 7200 RPM Hard Drive has an average sequential read/write speed of 80-160MB/second
 
 SSDs, unlike HDDs have no moving parts hence are quieter. They normally come in 2.5" form factor and are more durable and use less energy. Having said this, they tend to have a lower max capacity and are much more expensive than HDDs per GB.
-
 If you're not convinced SSDs are a hell of a lot better, check [this](https://windows101tricks.com/wp-content/uploads/2018/03/Comparision-between-HDD-Vs.-SSD-.jpg?escpb=184-0&ezimgfmt=rs:590x863/rscb0/ng:webp/ngcb0) out. A SATA 3 SSD has an average sequential read/write speed up to 550MB/second
 
 m.2 SATA is performs like an SSD but benefits from the it's tiny m.2 size meaning the drive directly plugs into the motherboard - no messy cabling! Their pricing is also similar to SSDs
@@ -266,7 +271,7 @@ Check out this [power supply calculator](https://outervision.com/power-supply-ca
 
 
 #### 6. PC case and Fans
-Checklist for choosing the correct case:
+We're going to need something to keep our PC components in place... Checklist for choosing the correct case:
  * **Size**: E-ATX, ATX, Micro-ATX, Mini-ATX. Need to make sure the size of your motherboard and other component is compatible with the case
  * **Looks**: Whilst not being technically important, I strongly suggest you buy a PC case that you'd actually be impressed to look at. And yes, even at budget range its possible to find such!
  * **Drive Bays**: Gives you the options to add more drives
@@ -334,13 +339,16 @@ Last but not least, is thermal paste! Thermal paste allows the heat of your PC c
 
 There are a lot of Thermal paste brand to choose from, but a lot of them are more or less the same, so I'd recommend: [ARCTIC MX-4 Edition 2019](https://www.amazon.co.uk/ARCTIC-MX-4-2019-Performance-Durability/dp/B07L9BDY3T/)
 
-#### Part's and Equipment list
 
-**AMD SUPER BUDGET GAMING BUILD ~ £293**<br>
+*[HTML]:
+<div id="parts-list"></div>
+### Part's and Equipment list
+
+**AMD SUPER BUDGET GAMING BUILD ~ £282**<br>
 [Edit this build on pcpartpicker](https://uk.pcpartpicker.com/list/WzJwRJ)
 
 {: .box-warning}
-If you go for this build, I highly recommend spending a little bit extra to buy 16GB RAM instead of 8GB. The performance increase is huge and very noticeable in GPU intensive games like Tom Clancy's Division 2, World War Z and Warframe.
+If you decide you'd rather have 8GB RAM, I highly recommend spending a little bit extra to buy 16GB RAM (as said in the build). The performance increase is huge and very noticeable in GPU intensive games like Tom Clancy's Division 2, World War Z and Warframe.
 
 Type|Item|Price
 :----|:----|:----
@@ -349,8 +357,8 @@ Type|Item|Price
 **Memory** | [Corsair - Vengeance LPX 16 GB (2 x 8 GB) DDR4-2400 Memory](https://uk.pcpartpicker.com/product/tPVBD3/corsair-memory-cmk16gx4m2a2400c16r) | £67.56 @ Amazon UK
 **Storage** | [Western Digital - Caviar Blue 1 TB 3.5" 7200RPM Internal Hard Drive](https://uk.pcpartpicker.com/product/MwW9TW/western-digital-internal-hard-drive-wd10ezex) | £35.64 @ Amazon UK
 **Case** | [CiT - F3 MicroATX Mini Tower Case](https://uk.pcpartpicker.com/product/bJqhP6/cit-cit-f3blackred-microatx-mini-tower-case-cit-f3blackred) | £28.89 @ Amazon UK
-**Power Supply** | [EVGA - 500 W 80+ Certified ATX Power Supply](https://uk.pcpartpicker.com/product/XCjG3C/evga-power-supply-100w10500kr) | £41.00
- | **Total** | **£293.06**
+**Power Supply** | [EVGA - 500 W 80+ Certified ATX Power Supply](https://uk.pcpartpicker.com/product/XCjG3C/evga-power-supply-100w10500kr) | £30.00
+ | **Total** | **£282.06**
 
 
 
