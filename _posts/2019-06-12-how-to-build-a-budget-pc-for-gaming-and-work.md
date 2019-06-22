@@ -1,15 +1,16 @@
 ---
 layout: post
-title: BEST gaming PC build for under £300
-subtitle: What's the best gaming PC you can make with a low budget?
+title: How to build the best gaming PC for under £300
+subtitle: and why you should
 <!-- image: /img/hello_world.jpeg -->
 ---
 
-{: .box-warning}
-**Note:** Post is still under construction
-
 
 Welcome to my first blog post!
+
+As I've recently, built my first computer I thought I'd base my first post on that.
+
+
 
 Throughout the years, computing power has continued to increase whilst "price-per-performance” continues to decrease. There has never been a better time to build a computer!
 
@@ -24,8 +25,7 @@ If this is your first time building a computer, do not fret! This build was also
 | Can actually play some of the current cpu/intensive games (See Example below) | Most top-end games will probably be restricted to 30-60FPS, at low quality and low resolutions 720-1080p |
 | Doesn’t consume a lot of power     |     |
 |Very affordable |     |
-
-Example - [Ryzen 5 2400G Vega 11 - 1440p Gaming in 11 Games - Benchmark Test](https://youtu.be/8cz4EkAFOWs) and [Ryzen 5 2400GE vs. Ryzen 5 2400G in 9 Games. Gaming Benchmark Test Comparison](https://www.youtube.com/watch?v=5b6CbJl_Zyg)
+|You can build a budget PC whilst still having good upgradeability|  |
 
 <br>
 
@@ -36,13 +36,13 @@ Normally, most would purchase a CPU and a dedicated video/graphics card separate
 
 If possible, I'd recommend spending the extra £40 and getting the Ryzen 5 2400G because:
 * More Threads and better multi-core performance
-* higher cpu benchmark scores - [Ryzen 5 2400G benchmark comparison](https://www.eurogamer.net/articles/digitalfoundry-2018-ryzen-3-2200-g-ryzen-5-2400g-review)
+* higher cpu benchmark scores - [Ryzen 5 2400G benchmark comparison](https://www.eurogamer.net/articles/digitalfoundry-2018-ryzen-3-2200-g-ryzen-5-2400g-review), [1440p Gaming on Ryzen 2400G](https://youtu.be/8cz4EkAFOWs)
 * Better gaming performance - [Ryzen 2400G vs 2200G games test](https://www.youtube.com/watch?v=I74BOOf7BVY)
 
 
 The GPU performance of Ryzen 2400G is comparable (and sometimes better) than Nvidia's GT 1030 (£60+). Obviously, you won't be able to play most GPU intensive games past Low/720p settings at 40+ fps.
 
-If you want to get quite a bit more performance, the next step up would be AMD's RX 5 series or Nvidia's 1050 upwards, which all start at £100+, but lets be honest - at this point you'd probably rather spend a bit more as you want to play you games at max, if not high settings.
+If you want to get quite a bit more performance, the next step up would be AMD's RX 5 series or Nvidia's 1050 upwards, which all start at £100+, but lets be honest - at this point you'd probably rather spend a bit more as you want to play your games at max, if not high settings.
 
 Alternatively, **you could buy a pre-owned older generation graphics card** like the GTX 960+, AMD's R9 series as their performance are closer to GTX 1050 Ti's and AMD's RX570 and RX580 (£100-150) whilst spending less than £60!
 
@@ -157,7 +157,7 @@ There are other factors to consider, like RAM Timings and RAM CAS Latency, but f
   </div>
 </div>
 
-#### Storage
+#### 4. Storage
 There are many types of storage devices out there but to keep things simple, the 3 major ones are Hard Disks, SSDs or m.2 SATA and m.2 NVMe.
 
 > M.2 – A slimmer form factor for storage drives <br>
@@ -218,7 +218,7 @@ For the cheapest option, one 1TB hard drive would be enough, but for gaming and 
 </div>
 
 
-#### Power Supply
+#### 5. Power Supply
 The Power Supply Unit (PSU) is what will supply your whole computer with power. It's important that you choose a power supply with the correct Wattage. Another factor to consider when choosing a power supply is the efficiency.
 
 > "A power supply with an efficiency rating of 80 percent provides 80 percent of its rated wattage as power to your system, while losing the other 20 percent as heat."
@@ -229,7 +229,7 @@ Most modern PSUs tend be "80 Plus" certified confirming that those PSUs are at l
 
 For our goals, a normal 80 Plus or Bronze-tier PSU rated at 450W will suffice. However, I recommend the extra wattage for a little more cost. It saves you from having to buy another PSU if you decided to upgrade your PC.
 
-Check this [power supply calculator](https://outervision.com/power-supply-calculator) or see the estimated wattage when building with [PCPartPicker](https://pcpartpicker.com/).
+Check out this [power supply calculator](https://outervision.com/power-supply-calculator) or see the estimated wattage when building with [PCPartPicker](https://pcpartpicker.com/).
 
 *[HTML]:
 <div class="row">
@@ -265,7 +265,116 @@ Check this [power supply calculator](https://outervision.com/power-supply-calcul
 
 
 
-#### PC case and Fans
-#### Thermal Paste
+#### 6. PC case and Fans
+Checklist for choosing the correct case:
+ * **Size**: E-ATX, ATX, Micro-ATX, Mini-ATX. Need to make sure the size of your motherboard and other component is compatible with the case
+ * **Looks**: Whilst not being technically important, I strongly suggest you buy a PC case that you'd actually be impressed to look at. And yes, even at budget range its possible to find such!
+ * **Drive Bays**: Gives you the options to add more drives
+ * **Expansion Slots**: Most Micro-ATX cases tend to come with 4 expansion slots. Ideally this is enough for 1 Graphics card (that consumes 2 slots) and a WiFi adapter.
+ * **Front Ports**: Having extra USB ports, sound ports and even an SD card at the front of the computer comes very handy!
+  * **Transparent Side panel**: You get to physically the insides of your PC without opening it. Even better if you have RGB inside!
+  * **Fans**: Some PC cases already come with fans (and even ones with LEDs!), for cost-saving this is a must!
+  * **Radiator**: For higher end builds cooling solutions tend to evolve from a simple fan-based to another type of cooling the requires a radiator
+  * **Thumb Screws**: A lot of cases tend to come with thumb screws nowadays, but these type of screws enable you to unscrew something without a screw driver tool, very hand when having to keep opening that side panel.
+
+  <br>
+
+  *[HTML]:
+  <div class="row">
+    <div class="col-sm-4 col-md-4 col-xs-6">
+      <div class="thumbnail">
+        <img class="" src="/img/cpu/CiTF3GamingCase.jpg" alt="CiT F3 Gaming Case: Side Window | 12cm Red LED Fan | Micro ATX | Mini ITX Support">
+        <div class="caption">
+          <h5>CiT F3 Gaming Case - £29</h5>
+          <p><a target="_blank" href="https://www.amazon.co.uk/CiT-Black-Matx-Gaming-Stripe/dp/B01BLI50Z4/" class="btn btn-primary" role="button">Buy</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-xs-6">
+      <div class="thumbnail">
+        <img class="" src="/img/cpu/AerocoolAero-500RGB.jpg" alt="Aerocool Aero-500 RGB Gaming Case with Tempered Glass">
+        <div class="caption">
+          <h5>Aerocool Aero-500 RGB Gaming Case with Tempered Glass - £35</h5>
+          <p><a target="_blank" href="https://www.amazon.co.uk/Aerocool-Aero-500-Gaming-Tempered-Window/dp/B07B3XYVTX/" class="btn btn-primary" role="button">Buy</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-xs-6">
+      <div class="thumbnail">
+        <img class="" src="/img/cpu/CiTDarkSoulBlack.jpg" alt="CiT Dark Soul Black Midi Case">
+        <div class="caption">
+          <h5>CiT Dark Soul Black - £34</h5>
+          <p><a target="_blank" href="https://www.amazon.co.uk/CiT-Dark-Black-Window-Panel/dp/B01MSE30WA/" class="btn btn-primary" role="button">Buy</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-xs-6">
+      <div class="thumbnail">
+        <img class="" src="/img/cpu/GameMaxGMX-EXPEDITION-BL.jpg" alt="Game Max GMX-EXPEDITION-BL">
+        <div class="caption">
+          <h5>Game Max GMX-EXPEDITION-BL - £31</h5>
+          <p><a target="_blank" href="https://www.amazon.co.uk/Game-Max-GMX-EXPEDITION-WHT-Expedition-Gaming/dp/B07D2RW27L/" class="btn btn-primary" role="button">Buy</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-xs-6">
+      <div class="thumbnail">
+        <img class="" src="/img/cpu/CoolerMasterMasterBoxLite3.1.jpg" alt="Cooler Master MasterBox Lite 3.1">
+        <div class="caption">
+          <h5>Cooler Master MasterBox Lite 3.1 - £38</h5>
+          <p><a target="_blank" href="https://www.amazon.co.uk/Cooler-Master-MasterBox-Computer-MCW-L3B3-KANN-01/dp/B071GDSBMN/" class="btn btn-primary" role="button">Buy</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+#### 7. Thermal Paste
+Last but not least, is thermal paste! Thermal paste allows the heat of your PC components to dissipate. Usually applied on the CPU so that it's heat is dissipated onto your CPU cooler which then lowers the temperature of the CPU.
+
+There are a lot of Thermal paste brand to choose from, but a lot of them are more or less the same, so I'd recommend: [ARCTIC MX-4 Edition 2019](https://www.amazon.co.uk/ARCTIC-MX-4-2019-Performance-Durability/dp/B07L9BDY3T/)
 
 #### Part's and Equipment list
+
+**AMD SUPER BUDGET GAMING BUILD ~ £293**<br>
+[Edit this build on pcpartpicker](https://uk.pcpartpicker.com/list/WzJwRJ)
+
+{: .box-warning}
+If you go for this build, I highly recommend spending a little bit extra to buy 16GB RAM instead of 8GB. The performance increase is huge and very noticeable in GPU intensive games like Tom Clancy's Division 2, World War Z and Warframe.
+
+Type|Item|Price
+:----|:----|:----
+**CPU** | [AMD - Ryzen 3 2200G 3.5 GHz Quad-Core Processor](https://uk.pcpartpicker.com/product/RkJtt6/amd-ryzen-3-2200g-35ghz-quad-core-processor-yd2200c5fbbox) | £78.99 @ Amazon UK
+**Motherboard** | [ASRock - A320M-HDV Micro ATX AM4 Motherboard](https://uk.pcpartpicker.com/product/vs2rxr/asrock-a320m-hdv-micro-atx-am4-motherboard-a320m-hdv) | £40.98 @ Amazon UK
+**Memory** | [Corsair - Vengeance LPX 16 GB (2 x 8 GB) DDR4-2400 Memory](https://uk.pcpartpicker.com/product/tPVBD3/corsair-memory-cmk16gx4m2a2400c16r) | £67.56 @ Amazon UK
+**Storage** | [Western Digital - Caviar Blue 1 TB 3.5" 7200RPM Internal Hard Drive](https://uk.pcpartpicker.com/product/MwW9TW/western-digital-internal-hard-drive-wd10ezex) | £35.64 @ Amazon UK
+**Case** | [CiT - F3 MicroATX Mini Tower Case](https://uk.pcpartpicker.com/product/bJqhP6/cit-cit-f3blackred-microatx-mini-tower-case-cit-f3blackred) | £28.89 @ Amazon UK
+**Power Supply** | [EVGA - 500 W 80+ Certified ATX Power Supply](https://uk.pcpartpicker.com/product/XCjG3C/evga-power-supply-100w10500kr) | £41.00
+ | **Total** | **£293.06**
+
+
+
+**AMD BUDGET GAMING BUILD ~ £393**<br>
+[Edit this build on pcpartpicker](https://uk.pcpartpicker.com/list/Mp7NKB)
+
+Type|Item|Price
+:----|:----|:----
+**CPU** | [AMD - Ryzen 5 2400G 3.6 GHz Quad-Core Processor](https://uk.pcpartpicker.com/product/FGPKHx/amd-ryzen-5-2400g-36ghz-quad-core-processor-yd2400c5fbbox) | £119.13 @ Amazon UK
+**Motherboard** | [Gigabyte - B450M DS3H Micro ATX AM4 Motherboard](https://uk.pcpartpicker.com/product/hpRzK8/gigabyte-b450m-ds3h-micro-atx-am4-motherboard-b450m-ds3h) | £61.97 @ Amazon UK
+**Memory** | [Corsair - Vengeance LPX 16 GB (2 x 8 GB) DDR4-3000 Memory](https://uk.pcpartpicker.com/product/MYH48d/corsair-memory-cmk16gx4m2b3000c15) | £74.85 @ Amazon UK
+**Storage** | [Western Digital - Green  240 GB 2.5" Solid State Drive](https://uk.pcpartpicker.com/product/9Bc48d/western-digital-green-240gb-25-solid-state-drive-wds240g2g0a) | £27.95 @ Amazon UK
+**Storage** | [Western Digital - Caviar Blue 1 TB 3.5" 7200RPM Internal Hard Drive](https://uk.pcpartpicker.com/product/MwW9TW/western-digital-internal-hard-drive-wd10ezex) | £35.64 @ Amazon UK
+**Case** | [CiT - F3 MicroATX Mini Tower Case](https://uk.pcpartpicker.com/product/bJqhP6/cit-cit-f3blackred-microatx-mini-tower-case-cit-f3blackred) | £28.89 @ Amazon UK
+**Power Supply** | [Corsair - VS 650 W 80+ Certified ATX Power Supply](https://uk.pcpartpicker.com/product/2cMwrH/corsair-vs-650w-80-certified-atx-power-supply-cp-9020172-na) | £45.00
+  | **Total** | **£393.43**
+
+### Conclusion
+Thanks for reading my first blog post!
+
+I hope that I've somehow:
+ * Convinced you to build a budget gaming PC
+ * Made you consider spending a bit more on your build plans
+ * Made you realise you should just save and buy a higher spec PC
+ * Inspired you to install RGB on your current PC
+
+Leave a comment if this helps (or not) :D
