@@ -1,11 +1,11 @@
 ---
 layout: post
 title: How to build the best gaming PC for under £300
-subtitle: ...and why you should
+subtitle: ...and why you really should.
 comments: true
 show-avatar: false
-bigimg: /img/pc.png
-<!-- image: /img/hello_world.jpeg -->
+bigimg: /img/pc.jpg
+tags: [pc build, gaming pc, AMD, AMD Ryzen]
 ---
 
 
@@ -35,9 +35,9 @@ Throughout the years, computing power has continued to increase whilst "price-pe
 
 <br>
 
-### What you need
+## What you need
 
-#### 1. CPU, Video Card (GPU) & CPU Cooler
+### 1. CPU, Video Card (GPU) & CPU Cooler
 Normally, most would purchase a CPU and a dedicated video/graphics card separately. However, with AMD's latest APUs, integrated graphics has never been more powerful!
 
 If possible, I'd recommend spending the extra £40 and getting the Ryzen 5 2400G because:
@@ -76,7 +76,7 @@ Another Benefit with buying an **AMD Ryzen is that they come with a stock cooler
   </div>
 </div>
 
-#### 2. Motherboard
+### 2. Motherboard
 Fortunately, there are a lot of micro-ATX sized socket AM4 Motherboards that can be bought for less than £60 - Perfect for budget builds!
 
 One of the cheapest I can recommend is the ASRock A320M-HDV which comes in at £41. However, it may be worth adding an extra £20+ to buy a motherboard with better features and capabilities for future upgrades.
@@ -121,7 +121,7 @@ One of the cheapest I can recommend is the ASRock A320M-HDV which comes in at £
   </div>
 </div>
 
-#### 3. RAM
+### 3. RAM
 The current latest type of RAM available is DDR4, which boasts higher clock speed frequencies, better performance whilst reducing power consumption.
 
 For a gaming build you should have at least 8GB of RAM, although I would recommend 16GB. The Ryzen APU listed above takes up to 2GB of the RAM and uses it as graphics memory. Leaving you with 6GB of RAM to run your Operating System and play your game.
@@ -163,7 +163,7 @@ There are other factors to consider, like RAM Timings and RAM CAS Latency, but f
   </div>
 </div>
 
-#### 4. Storage
+### 4. Storage
 There are many types of storage devices out there but to keep things simple, the 3 major ones are Hard Disks, SSDs or m.2 SATA and m.2 NVMe.
 
 > M.2 – A slimmer form factor for storage drives <br>
@@ -223,7 +223,7 @@ For the cheapest option, one 1TB hard drive would be enough, but for gaming and 
 </div>
 
 
-#### 5. Power Supply
+### 5. Power Supply
 The Power Supply Unit (PSU) is what will supply your whole computer with power. It's important that you choose a power supply with the correct Wattage. Another factor to consider when choosing a power supply is the efficiency.
 
 > "A power supply with an efficiency rating of 80 percent provides 80 percent of its rated wattage as power to your system, while losing the other 20 percent as heat."
@@ -270,7 +270,7 @@ Check out this [power supply calculator](https://outervision.com/power-supply-ca
 
 
 
-#### 6. PC case and Fans
+### 6. PC case and Fans
 We're going to need something to keep our PC components in place... Checklist for choosing the correct case:
  * **Size**: E-ATX, ATX, Micro-ATX, Mini-ATX. Need to make sure the size of your motherboard and other component is compatible with the case
  * **Looks**: Whilst not being technically important, I strongly suggest you buy a PC case that you'd actually be impressed to look at. And yes, even at budget range its possible to find such!
@@ -334,7 +334,7 @@ We're going to need something to keep our PC components in place... Checklist fo
   </div>
 
 
-#### 7. Thermal Paste
+### 7. Thermal Paste
 Last but not least, is thermal paste! Thermal paste allows the heat of your PC components to dissipate. Usually applied on the CPU so that it's heat is dissipated onto your CPU cooler which then lowers the temperature of the CPU.
 
 There are a lot of Thermal paste brand to choose from, but a lot of them are more or less the same, so I'd recommend: [ARCTIC MX-4 Edition 2019](https://www.amazon.co.uk/ARCTIC-MX-4-2019-Performance-Durability/dp/B07L9BDY3T/)
@@ -376,7 +376,7 @@ Type|Item|Price
 **Power Supply** | [Corsair - VS 650 W 80+ Certified ATX Power Supply](https://uk.pcpartpicker.com/product/2cMwrH/corsair-vs-650w-80-certified-atx-power-supply-cp-9020172-na) | £45.00
   | **Total** | **£393.43**
 
-### Conclusion
+## Conclusion
 Thanks for reading my first blog post!
 
 I hope that I've somehow:
