@@ -2,6 +2,8 @@
 layout: page
 title: About me
 subtitle: Why you'd want to go on a date with me
+js: /js/contact.js
+ext-js: ['https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js', 'https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js', 'https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js']
 ---
 
 My name is Inigo Montoya. I have the following qualities:

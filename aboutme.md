@@ -25,7 +25,7 @@ subtitle: I won't say much, promise.
 
 <p class="about-text">
   <span class="fa fa-file-text-o about-icon"></span>
-  Some of the key projects I've worked on include the Cosmapocalypse demo site, MCU Car Rally.
+  Some of the key projects I've worked on include the Cosmapocalypse demo site, A line following robot for the MCU Car Rally.
 </p>
 
 <p class="about-text">
