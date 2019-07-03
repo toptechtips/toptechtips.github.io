@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create a website form with a Firebase backend (free)
+title: Create a website from with a Firebase backend (free)
 comments: true
 show-avatar: false
 tags: [firebase, firestore, web form, jekyll]
@@ -26,12 +26,12 @@ Here's a quick diagram of what we're trying to achieve:
 <br>
 
 
-#### 1. Create HTML form
+### 1. Create HTML form
 
 
 <br>
 
-#### 2. Create a Firebase project
+### 2. Create a Firebase project
 
 To use Firebase, you need a google account. Head over to [Google Accounts](https://support.google.com/accounts/answer/27441?hl=en) (If you don't trust this link, just google: _"Create a google account"_).
 
@@ -49,7 +49,7 @@ And with that, your Firebase project is created.
 
 <br>
 
-#### 3. Create a Firebase Database for you project
+### 3. Create a Firebase Database for you project
 
 You will now see your Project on your [Firebase Dashboard](https://console.firebase.google.com/).
 
@@ -66,22 +66,48 @@ You will now see your Project on your [Firebase Dashboard](https://console.fireb
 
 ![Firebase add database](/img/firebase_webform/create_db1.png)
 
-<br>
-
-#### 4. Create a Firestore Collection
+#### Create a Firestore Collection (Optional)
 Firestore is the successor of the earlier version of Firebase so I will use the term "Firebase" and "Firestore" interchangibly.
 
-- After you've created your database, navigate to it and click **"Add Collection"**
+You can create a collection yourself, by clicking "Add Collection" and adding some fields. But for this post, we don't need to as Firebase allows us push data without any sort of Collection definition/mappings to be defined.
+
+<br>
 
 
+### 4. Connect Firebase to website
 
-++++++++++DO THIS PART++++++++++++
-- add collection ID
-- add document fields
+Next we need to actually connect our Firebase database to our website.
+- Navigate to **Project Settings** (the cog icon on the left side bar).
+- **Add an app** - Click on the code icon (looks like this "</>").
+- Enter an **app nickname** (for this example, we use test-site).
+- Firebase will then generate some Javascript code for you to add to your website:
 
+```javascript
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
 
-#### 5. Connect Firebase to website
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "<__YOUR_API_KEY__>",
+    authDomain: "<__YOUR_AUTH_DOMAIN__>",
+    databaseURL: "<__YOUR_DATABASE_URL__>",
+    projectId: "<__YOUR_PROJECT_ID__>",
+    storageBucket: "<__YOUR_STORAGE_ID__>",
+    messagingSenderId: "<__YOUR_MESSAGING_SENDER_ID__>",
+    appId: "<__YOUR_APP_ID__>"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+```
+
+{: .box-warning}
+Note that the javascript libraries in the generted script are CDN-based. You can change them if you wish to save the Firebase libraries locally.
+
 
 <br>
 

@@ -1,18 +1,32 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Say Hello.
+subtitle: Wan't to work on something?
+show-avatar: false
 js: /js/contact.js
 ext-js: ['https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js', 'https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js', 'https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js']
 ---
+Please do not hesitate to contact me :D <br>
+Have a project you wan't to work on? Or just wan't to connect?
 
-My name is Inigo Montoya. I have the following qualities:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+*[HTML]:
+<form class="form-horizontal">
+  <div class="grid">
+    <div class="form-group">
+      <div class="col-xs-6">
+        <input type="text" class="form-control input-lg" id="name_input" placeholder="Name" required="required">
+      </div>
+      <div class="col-xs-6">
+        <input type="email" class="form-control input-lg" id="email_input" placeholder="Email" required="required">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-12">
+        <textarea id="msg_input" type="text" name="message" class="form-control input-lg" placeholder="Message" title="Message" required="required" rows="3"></textarea>
+      </div>
+    </div>
+  </div>
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+  <button id="submit_msg" type="button" class="btn btn-lg btn-primary">Submit</button>
+</form>
