@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create a website from with a Firebase backend (free)
+title: Create a website form with a Firebase backend (free)
 comments: true
 show-avatar: false
 tags: [firebase, firestore, web form, jekyll]
