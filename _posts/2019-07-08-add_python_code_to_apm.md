@@ -91,8 +91,13 @@ if __name__ == "__main__":
 
 After this, go to Kibana and you should see your python agent (called "test") in the APM dashboard
 
-===========INSERT KIBANA DASHBOARD SCREENSHOT===========
+![dashbord1](/img/apm/dash1.png)
 
+![dashbord1](/img/apm/dash2.png)
+
+You can see the log message:
+
+![dashbord1](/img/apm/dash3.png)
 
 ### Configure the Python Agent for storing custom fields
 With the last section we learn how to "log" a message into APM.
@@ -114,6 +119,10 @@ if __name__ == "__main__":
     client.capture_message('Test Message', custom=data)
 
 ```
+
+You can see the "custom_field":
+
+![dashboard_custom](/img/apm/dash4_custom.png)
 
 <br>
 
@@ -149,7 +158,53 @@ if __name__ == "__main__":
 
 Now when you look at the APM Dashboard on Kibana, you will see your transaction. You will also see the transaction timeline - You will the span of time that the __main__ function ran and the do_thing() function ran for:
 
-=============INSERT KIBANA DASHBOARD APM SCREENSHOT=============
+![dashbord1](/img/apm/dash5trans1.png)
+
+![dashbord1](/img/apm/dash5trans2.png)
+
+You can see a timeline of the functions' exxecution:
+
+![dashbord1](/img/apm/dash5trans3.png)
+
+
+#### Using capture_exception()
+
+When you use the ```capture_exception()``` function at an Exception part of the code, apm logs the Exeception stack trace and allows to pinpoint where in the code the error occured. In the example below, we raise an exception in the ```do_thing()``` function
+
+```python
+from elasticapm import Client
+
+client = Client(service_name="test")
+
+@elasticapm.capture_span()
+def do_thing():
+    try:
+        sleep(5)
+        raise Exception("Raising Test Exception")
+    except Exception as e:
+        client.capture_exception()
+
+if __name__ == "__main__":
+    data = {
+        "custom_field": "test_value"
+    }
+
+    client.begin_transaction(transaction_type="track-do-thing")
+
+    sleep(4)
+    do_thing()
+    sleep(4)
+
+    client.end_transaction("finish-do-thing", "success")
+
+    client.capture_message(message="Test Log Message", custom=data)
+```
+
+![dashboard_exception](/img/apm/dash6except1.png)
+
+You can see which part of the code cause the exception:
+
+![dashboard_exception](/img/apm/dash6except2.png)
 
 
 ### Conclusion
