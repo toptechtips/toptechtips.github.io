@@ -4,7 +4,7 @@ title: How to monitor your python code using Elastic APM
 subtitle: Adding a custom Python Agent to Elastic APM
 comments: true
 show-avatar: false
-tags: [Elastic, APM, Python, Programming, Elasticsearch]
+tags: [Elastic, APM, Python, Programming, Elasticsearch, devops, software-development]
 ---
 
 

@@ -3,7 +3,7 @@ layout: post
 title: Create a website form with a Firebase backend (free)
 comments: true
 show-avatar: false
-tags: [firebase, firestore, web form, jekyll]
+tags: [firebase, firestore, web form, jekyll, web-development]
 ---
 
 In this post, we look at how we can create a website form that pushes user input to a (Firebase) Database.

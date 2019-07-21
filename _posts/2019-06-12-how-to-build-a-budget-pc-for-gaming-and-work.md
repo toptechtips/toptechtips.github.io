@@ -5,7 +5,7 @@ subtitle: ...and why you really should.
 comments: true
 show-avatar: false
 bigimg: /img/pc.jpg
-tags: [pc build, gaming pc, AMD, AMD Ryzen]
+tags: [pc build, gaming pc, AMD, AMD Ryzen, pc-building, cpu, gpu, RAM, psu]
 ---
 
 
