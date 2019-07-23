@@ -1,11 +1,14 @@
 ---
 layout: post
-title: How to parallelize your Ansible Tasks
+title: How to run your Ansible tasks in parallel
 subtitle: Using Ansible poll and async attributes to create async ansible tasks that can be parallelized
 comments: true
 show-avatar: false
 tags: [ansible, ansible poll, ansible async_status, ansible parallelization, devops, software-development]
 ---
+
+In this post we will look at how we can run our Ansible tasks in parallel. We will look at Ansible's ```async``` and ```poll``` attribute to achieve this. We will also look at how we can run a iterative task (iterates through a list/loop) in parallel.
+
 
 **Pre-Requisites:**
 Ansible Version: 2.8.1
@@ -14,7 +17,9 @@ Some tasks take a long time (for example setting up a container) and when ran se
 
 _So I wondered if ansible already has some functionality to allow for parallelization._
 
-### Ansible's Async Task Attribute (Skip this part if you just want to copy and paste the code)
+<br>
+
+## Ansible's Async Task Attribute (Skip this part if you just want to copy and paste the code)
 
 Turn's out ansible's is able to **execute tasks asynchronously** using the the **poll** and **async** attribute
 
@@ -57,7 +62,9 @@ If we set the async attribute is too small, less than the time the task will act
 ...FAILED! => {"changed": false, "msg": "async task did not complete within the requested time - 10s"}
 ```
 
-### Async + 0 poll = Parallelized Task
+<br>
+
+## Async + 0 poll = Parallelized Task
 
 So If we enable Async on a task, and set the poll to 0... We "Firing and Forgetting" a task. If we apply this to multiple tasks, that's no different to running a bunch of tasks in parallel.
 
@@ -104,9 +111,9 @@ PLAY RECAP *********************************************************************
 localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 ```
 
+<br>
 
-
-### What if I wan't to wait until ALL my async'ed/parallelized tasks are finished?
+## What if I wan't to wait until ALL my async'ed/parallelized tasks are finished?
 
 Ansible has the **async_status** module for this.
 
@@ -169,3 +176,16 @@ changed: [localhost] => (item={'ansible_loop_var': u'item', u'ansible_job_id': u
 PLAY RECAP *************************************************************************************************************************************************
 localhost                  : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 ```
+
+<br>
+
+## Conclusion
+
+I hope that this post helped with parallelizing you ansible tasks. Note that (at the time of writing), you can only parallelize ansible tasks... not playbooks.
+
+Thanks for reading,
+
+John
+
+
+<br>
