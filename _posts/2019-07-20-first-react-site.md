@@ -8,7 +8,7 @@ tags: [web-development, React, ReactJS, JavaScript, HTML, CSS]
 ---
 
 
-I've always been hearing about React and I thought that this weekend spend sometime exploring ReactJS, a very popular and powerful web framework.
+I've always been hearing about React and I thought that this weekend, I'd spend sometime exploring ReactJS, a very popular and powerful web framework.
 
 _My **real goal** was to see if it would be a good idea to build my portfolio site using ReactJS and to see how I could potentially do that._
 
@@ -61,7 +61,7 @@ class Square extends React.Component {
   }
 }
 ```
-When Rendered, the code above will render a simple button with text "Button1"
+When Rendered, the code above will render a simple button with text "Button1". Pretty neat ey?
 
 ### Conclusion... well for now.
 Obviously, I still have much to learn when using React. However, following the starter Tutorial helped me realise how nice it is to have a components based (similar to OOP) design pattern. I am currently working to see if using React for creating my [portfolio site](https://johncalzado1.github.io) would be better than just using Semantic UI frontend framework.
