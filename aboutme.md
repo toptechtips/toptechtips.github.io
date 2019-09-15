@@ -2,7 +2,6 @@
 layout: page
 title: Hey, I'm John.
 show-avatar: false
-subtitle: I won't say much, promise.
 ---
 
 #### Portfolio: [Here](https://johncalzado1.github.io) LinkedIn: [Here](https://linkedin.com/in/johncalzado)
@@ -25,7 +24,7 @@ subtitle: I won't say much, promise.
 
 <p class="about-text">
   <span class="fa fa-file-text-o about-icon"></span>
-  Some of the key projects I've worked on include the [Cosmapocalypse demo site](http://johncalzado1.github.io/CT6008/) and A line-following robot for the MCU Car Rally.
+  Some of the key projects I've worked on include the <a href="http://johncalzado1.github.io/CT6008/">Cosmapocalypse demo site</a> and A line-following robot for the MCU Car Rally.
 </p>
 
 <p class="about-text">
@@ -35,5 +34,5 @@ subtitle: I won't say much, promise.
 
 <p class="about-text">
   <span class="fa fa-globe about-icon" aria-hidden="true"></span>
-  Born in the Philippines, moved to Dubai, then settled in the UK at the age of 8. Studied in the UK and Graduated University in November 2018.
+  Born in the Philippines, moved to Dubai, then settled in the UK at the age of 8. Studied and Graduated in the UK.
 </p>
