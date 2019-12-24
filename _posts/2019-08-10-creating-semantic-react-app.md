@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How I finally managed to create a React based semantic-ui app in 2019
+title: Creating a React App with Semantic UI in 2019 (Finally)
 comments: true
 show-avatar: false
 tags: [web development, reactjs, semantic ui, npm, node, gulp, craco, less]
@@ -8,31 +8,6 @@ tags: [web development, reactjs, semantic ui, npm, node, gulp, craco, less]
 
 
 It's **August 2019** and I want to work on my incomplete [Protfolio Website](https://johncalzado1.github.io). However, I thought that instead of continuing development on it using semantic-ui, I would experiment with Semantic-UI's ReactJS integration. I figured this was also a good opprotunity to have more practice with ReactJS based on [my last weekend project.](/2019-07-20-first-react-site/)
-
-
-## I wanted to try and install Semantic UI (not React-based) | You DON'T have to do this to use SemanticUI React
-
-First I wanted to try installing a fresh version of semantic ui as the version my portfolio was using is an older version.
-
-## To install semantic UI I needed to install the following (in the time of writing):
-- Node (v6)
-- NPM
-- Gulp (v3.9.1, wasn't getting success with versions above)
-
-When installing node I suggest using [nvm](https://github.com/nvm-sh/nvm) as it allows you to install different versions of node with ease.
-
-{: .box-warning}
-Note: It's important to install the correct versions of these programs as some version don't work with others. *I Learnt this the hard way*. This is also why I recommend using nvm as it allows you to switch between node versions (and NPM versions) quickly and easily.
-<br><br>
-**From what I have seen, node version 8-12 (along with their npm versions that they come with) don't work well with Gulp v4 (latest)**
-
-After this I could then install semantic-ui:
-
-```bash
-npm install semantic-ui --save
-cd semantic/
-gulp build
-```
 
 ## Installing Semantic UI React Integration (with Default Theme)
 
@@ -122,6 +97,34 @@ Now, when I run ```yarn start```:
 
 We have a react app!
 
+
+<br>
+
+## Bonus Section
+
+### I wanted to try and install Semantic UI (not React-based) | You DON'T have to do this to use SemanticUI React
+
+First I wanted to try installing a fresh version of semantic ui as the version my portfolio was using is an older version.
+
+### To install semantic UI I needed to install the following (in the time of writing):
+- Node (v6)
+- NPM
+- Gulp (v3.9.1, wasn't getting success with versions above)
+
+When installing node I suggest using [nvm](https://github.com/nvm-sh/nvm) as it allows you to install different versions of node with ease.
+
+{: .box-warning}
+Note: It's important to install the correct versions of these programs as some version don't work with others. *I Learnt this the hard way*. This is also why I recommend using nvm as it allows you to switch between node versions (and NPM versions) quickly and easily.
+<br><br>
+**From what I have seen, node version 8-12 (along with their npm versions that they come with) don't work well with Gulp v4 (latest)**
+
+After this I could then install semantic-ui:
+
+```bash
+npm install semantic-ui --save
+cd semantic/
+gulp build
+```
 
 <br>
 
