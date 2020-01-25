@@ -4,7 +4,7 @@ title: Hey, I'm John.
 show-avatar: false
 ---
 
-#### Portfolio: [Here](https://johncalzado1.github.io) LinkedIn: [Here](https://linkedin.com/in/johncalzado)
+#### Portfolio: [Here](https://johncalzado1.github.io/portfolio) LinkedIn: [Here](https://linkedin.com/in/johncalzado)
 
 *[HTML]:
 <p class="about-text">
