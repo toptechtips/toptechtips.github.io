@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to setup appium and use it to automate mobile phone tasks
+title: How to setup appium and use it to automate mobile device tasks
 comments: true
 show-avatar: false
-tags: [appium, python, automation, android, adb, appium-doctor]
+tags: [appium, python, automation, android, adb, appium-doctor, emulator]
 ---
 
-One can use [Appium](http://www.appium.io/) to automate tasks on a mobile phone - be it Android or iOS.
-In this tutorial we will be automating a task on an Android phone, but can also work it iOS just by changing the configuration.
+One can use [Appium](http://www.appium.io/) to automate tasks on a mobile device - be it Android or iOS.
+In this tutorial we will be automating a task on an Android device, but can also work it iOS just by changing the configuration.
 
 ### What you need
 - Java
@@ -78,7 +78,7 @@ you can download the normal [Appium](https://github.com/appium/appium/releases) 
 
 At this point we should have everything setup.
 
-Run ```adb devices``` to start the ADB server. If this is the first time you are connecting a phone to adb, it will prompt you for authorization on the phone, **make sure to accept**.
+Run ```adb devices``` to start the ADB server. If this is the first time you are connecting a mobile device to adb, it will prompt you for authorization on the device, **make sure to accept**.
 
 The result will look something like this (as long as it says "device"):
 
@@ -138,3 +138,100 @@ pip install Appium-Python-Client
 {: .box-warning}
 Tip: Highly recommend you setup up an anaconda/miniconda/virtualenv envrionment. When you work with multiple python projects you're going to be working with different dependencies and python versions, so it's highly recommended you keep them seperate using an environment
 
+<br>
+
+#### Run the example script
+
+I have created a test script that you can run [here](https://github.com/johncalzado1/appium_scripting_example). This script will open chrome browser on your mobile device, search google for "toptechtips.github.io" and then it will click on the first result.
+
+**Note:** make sure to change the ```platformVersion``` in the variable ```desired_caps``` to the android OS version running on your mobile device. This script was tested on a OnePlus 6, running Android 10.
+
+The ```script.py``` (at the time of writing this) looks like this:
+
+```python
+# Simple Example Appium script
+
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from appium import webdriver
+from time import sleep
+
+if __name__ == "__main__":
+
+    desired_caps = {
+        'appPackage': 'com.android.chrome',
+        'appActivity': 'com.google.android.apps.chrome.Main',
+        'platformName': 'Android',
+        'deviceName': 'device',
+        'platformVersion': '10',
+        'noReset': 'true',
+        'fullReset': 'false'
+    }
+    try:
+        # Start driver for chrome browser
+        driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+
+        sleep(1)
+
+        # Find url bar and click it
+        url_bar = driver.find_element_by_id('com.android.chrome:id/url_bar')
+        url_bar.click()
+
+        sleep(1)
+
+        # Enter google address
+        url_bar.send_keys('google.com')
+
+        sleep(1)
+
+        driver.press_keycode(66)
+
+        sleep(1)
+
+        # We wait for the presence of the google search bar before doing anything else
+        # We use Selenium's to wait for some time until the search bard has loaded
+        # There is no ID for the search box so we use a bit of XPath to look for it
+
+        search_box_xpath = '//android.view.View/android.widget.EditText'
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, search_box_xpath)))
+
+        search_box = driver.find_element_by_xpath(search_box_xpath)
+        driver.set_value(search_box, "toptechtips.github.io")
+
+        # After entering the text into the search bar we then click search and wait
+        # for the next page to load
+
+        # We look for a widget Button with the text value 'Google Search'
+        search_button_xpath = "//android.widget.Button[contains(@text, 'Google Search')]"
+        driver.find_element_by_xpath(search_button_xpath).click()
+
+        # After we click the search button, we must wait for the search results container to appear
+        search_results_container_xpath = "//*[contains(@resource-id, 'rso')]"
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, search_results_container_xpath)))
+
+        # To get each result item, we first look for the container with the resource-id "rso"
+        # Then the 2nd part of the xpath string will anything that is "a view of a view of a view"
+        search_result_items_xpath = "//*[contains(@resource-id, 'rso')]//android.view.View/android.view.View/android.view.View"
+
+        # Note how we use "find_elements..." instead of the usual "find_element"
+        search_results = driver.find_elements_by_xpath(search_result_items_xpath)
+
+        # We then only want to click on the first result
+        first_result = search_results[0].click()
+
+        # We can then scroll, or even screenshot...
+
+    except Exception as e:
+        print("Script Error: {0}".format(e))
+```
+
+Run the script and you should see some magic...
+
+Hope this helps you get started with automating your very own appium scripts/tasks on your mobile device.
+
+**Bonus:** Instead of using a physical mobile device, you can use an emulator (I recommend Android-x86). Just do ```adb connect <ip address of emulator>``` and that will connect your emulator to the adb server.
+
+Kind Regards,
+
+John
