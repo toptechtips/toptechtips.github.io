@@ -24,7 +24,7 @@ show-avatar: false
 
 <p class="about-text">
   <span class="fa fa-file-text-o about-icon"></span>
-  Some of the key projects I've worked on include the <a href="http://johncalzado1.github.io/CT6008/">Cosmapocalypse demo site</a> and A line-following robot for the MCU Car Rally.
+  Some of the key projects I've worked on include the <a href="https://johncalzado1.github.io/cosmapocalypse_site/">Cosmapocalypse demo site</a> and A line-following robot for the MCU Car Rally.
 </p>
 
 <p class="about-text">
