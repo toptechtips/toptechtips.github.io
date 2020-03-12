@@ -14,52 +14,9 @@ Source code for tutorial, linked at bottom.
 ## What you need to have
 Ideally if you are reading this post, it's because you already have the following things listed below:
 - **Kibana Development Environment**: Clone Kibana Repo and setup kibana for development. See [Kibana's Guide](https://github.com/elastic/kibana/blob/master/CONTRIBUTING.md#development-environment-setup) for setting this up (If you have not done so already).
--  **A Custom Kibana plugin**: We won't look at how to create a kibana plugin in this post, but you can create a plugin template using [Kibana's Pluging Generator](https://github.com/elastic/kibana/tree/master/packages/kbn-plugin-generator)
+-  **A Custom Kibana plugin**: We won't look at how to create a kibana plugin in this post, but you can create one using [this quick tutorial on setting one up](/2020-03-10-how-to-create-your-own-kibana-plugin)
 - **Elasticsearch**: You need to have Elasticsearch running and also have an index and data in it
 - **Node**: You need node installed. You need a particular version of Node to run kibana. I suggest you use ```nvm``` to manage and use different versions of node
-
-## Quick Background info on Kibana Plugins
-According to Elastic: 
-> Kibana is an open source analytics and visualization platform designed to work with Elasticsearch. You use Kibana to search, view, and interact with data stored in Elasticsearch indices. You can easily perform advanced data analysis and visualize your data in a variety of charts, tables, and maps.
-<br>
-> Kibana makes it easy to understand large volumes of data. Its simple, browser-based interface enables you to quickly create and share dynamic dashboards that display changes to Elasticsearch queries in real time.
-
-As for what Kibana is technical wise, it's basically an application made up of a bunch of plugins.
-
-## Setting up Kibana and our Plugin (If you haven't already done so)
-
-Basically This will setup your kibana dev folders and generate your plugin, called test_plugin:
-```bash
-git clone https://github.com/elastic/kibana.git
-nvm use
-yarn kbn bootstrap
-node scripts/generate_plugin.js test_plugin
-```
-
-{: .box-info}
-Note: we run ```nvm use``` to automatically switch to the node version that kibana requires
-
-Then we run the Kibana Server and our test plugin will be loaded **(run the ```yarn``` command at project level, not at the plugin folder)**:
-
-```bash
-yarn debug
-```
-
-or 
-
-```bash
-yarn start
-```
-
-{: .box-warning}
-It's important to remember that the version of kibana running must be the same as the elasticsearch version running. 
-
-And the generated template plugin should look like this (at least for me, 20th September 2019):
-
-![Plugin](/img/kibana/plugin-home.png)
-
-Now, whenever you make changes to your plugin the server will automatically reload.
-
 
 ## Understanding how our plugin works (important if you don't know already) 
 
