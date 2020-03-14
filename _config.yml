@@ -114,6 +114,10 @@ google_analytics: "UA-142036416-1"
 #  uri: "demo.wiki.pro"
 #  opt-out: true
 
+# --- Google AdSense --- #
+
+google_adsense: "ca-pub-5441263031963814"
+
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
