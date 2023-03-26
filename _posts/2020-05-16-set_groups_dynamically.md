@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ansible - How to set the group dynamically in a playbook
+title: Ansible 2 - How to set the group dynamically in a playbook
 comments: true
 show-avatar: false
 tags: [Ansible, host, groups]
