@@ -9,6 +9,9 @@ tags: [Ansible, host, groups]
 Sometimes we might have a scenario where we wan't an ansible playbook's host to be set dynamically.
 We use the add_host module from ansible to do this: https://docs.ansible.com/ansible/latest/modules/add_host_module.html
 
+**Pre-Requisites:**
+Ansible Version: 2.8.1
+
 #### Code (The playbook)
 
 ```yml

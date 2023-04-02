@@ -5,8 +5,13 @@ comments: true
 show-avatar: false
 tags: [Ansible, host, groups]
 ---
+
+
 Last Post we learnt about setting a selecting a single host dynamically via playbook.
 In this post we will look at how ou can set groups dynamically (workaround that does the same job)
+
+**Pre-Requisites:**
+Ansible Version: 2.8.1
 
 #### Code (Playbook)
 
