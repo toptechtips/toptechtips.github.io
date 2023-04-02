@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to SSH into a private container within your server
-subtitle: Introducing SSH Bastion
+subtitle: How can we access a container within a server that is closed off from external access?
 comments: true
 show-avatar: false
 tags: [ssh, bastion, linux]
