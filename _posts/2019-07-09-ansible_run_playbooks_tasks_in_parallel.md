@@ -28,6 +28,7 @@ You can add the poll attribute to a class to specify how often the task should b
 
 In this example, the command is to wait for 15 seconds, whilst we poll it every 5 seconds. After 15 seconds(after the first task is finised) , we will see the debug message "Result: ...." along with the result of the first task.
 
+{% raw %}
 ```yaml
 ---
 - hosts: all
@@ -55,7 +56,7 @@ In This next example, we set the async to 10.
   - debug:
     msg: "Results: {{result}}"
 ```
-
+{% endraw %}
 If we set the async attribute is too small, less than the time the task will actually take. We get an error:
 
 ```shell
@@ -70,6 +71,7 @@ So If we enable Async on a task, and set the poll to 0... We "Firing and Forgett
 
 Now we uses loops (with_items) to iterate a task. But with async and poll, each time an item is iterated, the next item is immediately started.
 
+{% raw %}
 ```yaml
 - hosts: localhost
   vars:
@@ -88,6 +90,7 @@ Now we uses loops (with_items) to iterate a task. But with async and poll, each 
     - debug:
         msg: "Result: {{result}}"
 ```
+{% endraw %}
 
 Results in:
 
@@ -119,6 +122,7 @@ Ansible has the **async_status** module for this.
 
 In this next example, we will add the async_status module to our parallel task example from the last section to wait until all async tasks are finished. Not: The "retries" attribute is just the max number of retries for a task when it fails.
 
+{% raw %}
 ```yaml
 ---
 - hosts: localhost
@@ -148,6 +152,7 @@ In this next example, we will add the async_status module to our parallel task e
       until: async_poll_results.finished
       retries: 300
 ```
+{% endraw %}
 
 Results in:
 
