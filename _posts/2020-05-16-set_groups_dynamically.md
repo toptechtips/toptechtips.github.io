@@ -15,6 +15,7 @@ Ansible Version: 2.8.1
 
 #### Code (Playbook)
 
+{% raw %}
 ```yml
 - hosts: all
   gather_facts: no
@@ -35,6 +36,7 @@ Ansible Version: 2.8.1
     - debug:
         msg: "This task will run on: {{inventory_hostname}}"
 ```
+{% endraw %}
 #### Inventory
 
 We have one parent group "all" and it has 2 child groups called "group1" and "group2"

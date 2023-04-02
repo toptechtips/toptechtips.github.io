@@ -14,6 +14,7 @@ Ansible Version: 2.8.1
 
 #### Code (The playbook)
 
+{% raw %}
 ```yml
 - hosts: all
   gather_facts: no
@@ -33,6 +34,7 @@ Ansible Version: 2.8.1
     - debug:
         msg: "This task will run on: {{inventory_hostname}}"
 ```
+{% endraw %}
 
 #### Test Inventory
 

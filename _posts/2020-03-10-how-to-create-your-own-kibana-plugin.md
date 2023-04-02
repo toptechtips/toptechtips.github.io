@@ -5,13 +5,16 @@ comments: true
 show-avatar: false
 tags: [elasticsearch, kibana, react, javascript]
 ---
-
 In this post, we look at how we can setup our own kibana plugin.
 
+**Note: We are using Kibana 7.x**
+
 ## Quick Background info on Kibana Plugins
-According to Elastic: 
+
+According to Elastic:
+
 > Kibana is an open source analytics and visualization platform designed to work with Elasticsearch. You use Kibana to search, view, and interact with data stored in Elasticsearch indices. You can easily perform advanced data analysis and visualize your data in a variety of charts, tables, and maps.
-<br>
+> <br>
 > Kibana makes it easy to understand large volumes of data. Its simple, browser-based interface enables you to quickly create and share dynamic dashboards that display changes to Elasticsearch queries in real time.
 
 As for what Kibana is technical wise, it's basically an application made up of a bunch of plugins.
@@ -19,6 +22,7 @@ As for what Kibana is technical wise, it's basically an application made up of a
 ## Setting up Kibana and our Plugin (If you haven't already done so)
 
 Basically This will setup your kibana dev folders and generate your plugin, called test_plugin:
+
 ```bash
 git clone https://github.com/elastic/kibana.git
 nvm use
@@ -35,14 +39,14 @@ Then we run the Kibana Server and our test plugin will be loaded **(run the ```y
 yarn debug
 ```
 
-or 
+or
 
 ```bash
 yarn start
 ```
 
 {: .box-warning}
-It's important to remember that the version of kibana running must be the same as the elasticsearch version running. 
+It's important to remember that the version of kibana running must be the same as the elasticsearch version running.
 
 And the generated template plugin should look like this (at least for me, 20th September 2019):
 
