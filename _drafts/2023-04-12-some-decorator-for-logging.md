@@ -4,103 +4,36 @@ title: How to track local vars of a function from outside - Python settrace & se
 comments: true
 subtitle: What's the best way to inspect a functions execution without modifying the function itself
 show-avatar: false
-tags: [python, settrace, setprofile, debugging, APM]
+tags: [python, settrace, setprofile, debugging]
 ---
 
 I've always loved using PyCharm's debugging capabilities when it comes to debugging my Python functions. The problem I run into nowadays, is that I have a program that I want to run continuously, but I cannot be there to monitor it continuously. Now you'll say *"can't you just do some logging"* to which I have tried previously and so far my logging has not been "detailed enough".
 
-Here we explore a few methods that I have used to tackle this issue of how to track a functions movements
+#### It all started with logging
 
-> If you're in a rush just go to Solution 3 -> that's probably that one you want
+My typical logging methodology would be logging at the start of a function "start of function 1" and adding another log at exception "failed to do x y z" or at the end saying "end function 1".
 
-**Perquisites:**
-- Python 3
-
-#### Solution 1 - Use print or log at certain points of the function
-
-Effectively the ```print``` or ```log``` statements act as breakpoints.
-
-{% raw %}
 ```python
 def my_func():
-    print("start of my func")
+    log("start of my func")
     try:
-       print(locals())  # We print the local vars at this line of code 
        outcome = do_something()
-       print(locals())  # We print the local vars at this line of code
-       print("my_func success: {0}".format(outcome))
+       log("my_func success: {0}".format(outcome))
         return True
     except Exception as e:
-       print("Some error in my_func: {0}".format(e))
+       log("Some error in my_func: {0}".format(e))
     return False
 ```
-{% endraw %}
 
-**Pros**
-- Simple and easy to implement
-- You can make add as many "log or print points" to add more detail 
-- You can log as many variables you want
+The problem I face when I use this method of implementing logging is that when I have a million functions and I have to manually write a log message for each, and manually include variables that I want to debug into the log message or something like that. This was such a painful thing to maintain and I would rather have something a little more generic that I can just plug to a function to basically more or less do all of this. What I wanted wasn't just your typical "logging", What I wanted was the ability to **completely trace a function's execution**, and then log that.
 
-**Cons**
-- Hard to maintain and scale (becomes more inconvenient as your program scales)
-- If your function's behavior changes, you may have to change how you log or print as well
-- You have to add extra stuff within the function. Imagine if half the lines in your function is just log or print 
+Upon much research, the only way to really do that without having to dive too deeply into some random rabbit hole is by using python's settrace (or setprofile) capabilities. Which to be honest can be a bit of a mess itself if you're not careful of how you use it, but it is quite powerful
 
+**Perquisites:**
 
-#### Solution 2 - Use Elastic's APM to monitor your python code
+- Python 3
 
-Since I got tired of prints and logs, I wanted a more presentable way of tracking and debugging. So I tried Elastic's APM tool. You need to setup an APM server and then you need to import the APM python library to your code but once you have that setup, it's pretty easy and simple to capture a function's activity without having to code may print or log points to act as breakpoints. 
-
-If you are interested, ![here's](https://toptechtips.github.io/2019-07-08-add_python_code_to_apm/) a detailed tutorial on how you can get this setup: 
-
-Here's an example:
-
-{% raw %}
-```python
-from elasticapm import Client
-
-client = Client(service_name="test")
-
-@elasticapm.capture_span()  # add a decorator to start tracking your function 
-def do_thing():
-    sleep(5)
-
-if __name__ == "__main__":
-    client.begin_transaction(transaction_type="track-do-thing")
-
-    sleep(4)
-    do_thing()
-    sleep(4)
-
-    client.end_transaction("finish-do-thing", "success")
-
-    client.capture_message(message="Test Log Message", custom=locals())
-```
-{% endraw %}
-
-
-**Pros**
-- It's as simple as adding a decorator to a function to capture what's happening within
-- You have the option to add custom data/fields
-- It can track errors and exception and can even show you where in the code the error happens, through the APM dashboard
-- Can be used for gaining insight to your code's performance and can measure all sorts of metrics and custom metrics
-- Elastic APM has a pretty good UI  
-
-
-**Cons**
-- Might be a bit overkill to setup or use especially for a small project
-- If you want to add more detail you'd still have to add extra code within your functions
-- Not actually that good for debugging, more to do with performance monitoring
-
-
-
-
-
-
-TODO
-
-
-#### Enter Python's sys.settrace
+### Enter Python's sys.settrace
 
 We use Python's tracing capabilities to trace all sorts of events: 'call', 'line', 'return', 'exception' or 'opcode'. More Detail about them ![here](https://docs.python.org/3/library/sys.html#sys.settrace)
 
