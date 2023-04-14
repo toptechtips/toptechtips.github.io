@@ -16,6 +16,8 @@ In this Example we use:
 - Vue 3 (I code in Composition API but you can easily convert this to Options API)
 - Vuetify 3 Framework (optional)
 
+<br/>
+
 ## TLDR - Just show me the code
 
 Parent Component (shows counter):
@@ -68,7 +70,7 @@ It should look something like this:
 <br>
 ![v-model example 1](/img/v-model-example-1.png)
 
-
+<br/>
 
 ## Understanding How Props are Passed to Child and updated values are emitted to Parent Components
 
@@ -107,6 +109,8 @@ realistically all v-model does in the previous example, is:
 
 
 ***Code example of this is above in the TLDR section***
+
+<br/>
 
 ## Example 2 - Creating a custom Component to wrap around a Vuetify Component(s) and passing props and emits throught
 
