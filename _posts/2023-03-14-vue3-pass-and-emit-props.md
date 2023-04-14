@@ -1,13 +1,16 @@
 ---
 layout: post
-title: How to use v-model in Vue 3 to pass a value from parent to child component and then update the value from child to parent (BONUS - Example with Vuetify)
+title:  How to use v-model in Vue 3 to pass a value from parent to child component and then update the value from child to parent (BONUS - Example with Vuetify)
 comments: true
+subtitle: This is a guide on how Vue 3 v-model. Learn how to pass props and emit values effectively and efficiently in order to update data 
 show-avatar: false
 tags: [vue, vue 3, v-model, vuetify, props, emits, composition API]
 ---
 
 
 *It's been a good three years since I last wrote something, but anyways here we are.*
+
+Passing Props in Vue 3 is a one-way operation going from Child to Parent. This is quite normal for frameworks like Vue, and it's also normal that you use an emit event to send a value from child to parent. Vue 3 uses v-model in order to simplify this whole process.
 
 In this Example we use:
 - Vue 3 (I code in Composition API but you can easily convert this to Options API)
@@ -107,7 +110,7 @@ realistically all v-model does in the previous example, is:
 
 ### Example 2 - Creating a custom Component to wrap around a Vuetify Component(s) and passing props and emits throught
 
-In this example we have a Page called ``<FormPage>`` where we print  a list of fruits. We then have a Child component in the Page called ``<CustomList>`` which takes in the list of fruits as a prop and allows you to select which fruits to activate via checkbox.
+In this example we have a Page called ``<FormPage>`` where we print a list of fruits. We then have a Child component in the Page called ``<CustomList>`` which takes in the list of fruits as a prop and allows you to select which fruits to activate via checkbox.
 
 ![diagram 2](/img/Vue_3_model_update_2.png.png)
 
