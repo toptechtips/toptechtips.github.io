@@ -70,7 +70,7 @@ It should look something like this:
 
 
 
-### Understanding How Props are Passed to Child and updated values are emitted to Parent Components
+## Understanding How Props are Passed to Child and updated values are emitted to Parent Components
 
 In Vue, to pass values to from parent to child, we use ``v-bind`` e.g. 
 ```html
@@ -108,7 +108,7 @@ realistically all v-model does in the previous example, is:
 
 ***Code example of this is above in the TLDR section***
 
-### Example 2 - Creating a custom Component to wrap around a Vuetify Component(s) and passing props and emits throught
+## Example 2 - Creating a custom Component to wrap around a Vuetify Component(s) and passing props and emits throught
 
 In this example we have a Page called ``<FormPage>`` where we print a list of fruits. We then have a Child component in the Page called ``<CustomList>`` which takes in the list of fruits as a prop and allows you to select which fruits to activate via checkbox.
 
