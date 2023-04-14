@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  How to use v-model in Vue 3 to pass a value from parent to child component and then update the value from child to parent (BONUS - Example with Vuetify)
+title:  How to use v-model in Vue 3 to pass values between child and parent components (BONUS - Example with Vuetify)
 comments: true
 subtitle: This is a guide on how Vue 3 v-model. Learn how to pass props and emit values effectively and efficiently in order to update data 
 show-avatar: false
