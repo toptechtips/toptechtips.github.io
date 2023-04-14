@@ -1,22 +1,25 @@
 ---
 layout: post
-title: How to track local vars of a function from outside - Python settrace & setprofile
+title: BEST 3 ways to trace local variables of a python function for effective debugging
 comments: true
-subtitle: What's the best way to inspect a functions execution without modifying the function itself
+subtitle: In this guide we explore 3 ways to trace the local variables during a python functions execution. Using print, logging, Elastic APM and sys.settrace()  
 show-avatar: false
 tags: [python, settrace, setprofile, debugging, APM]
 ---
 
-I've always loved using PyCharm's debugging capabilities when it comes to debugging my Python functions. The problem I run into nowadays, is that I have a program that I want to run continuously, but I cannot be there to monitor it continuously. Now you'll say *"can't you just do some logging"* to which I have tried previously and so far my logging has not been "detailed enough".
+> I've always loved programming IDEs that have good debugging capabilities. I like using [PyCharm's](https://www.jetbrains.com/pycharm/) debugging capabilities when it comes to debugging or tracing my local variables in my Python functions. The problem I run into nowadays, is that I have a program that I want to run continuously, but I cannot be there to monitor it continuously on the debugger and so.
 
-Here we explore a few methods that I have used to tackle this issue of how to track a functions movements
+In this post we explore 3 methods that I have used to tackle this issue of how to track and store local variables changes during function execution:
+- using logs to log points of change to a file or print to output to a console
+- using [Elastic APM](https://www.elastic.co/guide/en/apm/agent/python/current/index.html) to log your points of change into a detailed dashboard with a lot of features for tracking
+- using python's built-in sys.settrace() or sys.setprofile() functions to trace events without modifying function code to do any sort of logging  
 
 > If you're in a rush just go to Solution 3 -> that's probably that one you want
 
-**Perquisites:**
-- Python 3
 
-#### Solution 1 - Use print or log at certain points of the function
+<br>
+
+## Solution 1 - Use print or log at certain points of the function
 
 Effectively the ```print``` or ```log``` statements act as breakpoints.
 
@@ -46,12 +49,13 @@ def my_func():
 - If your function's behavior changes, you may have to change how you log or print as well
 - You have to add extra stuff within the function. Imagine if half the lines in your function is just log or print 
 
+<br>
 
-#### Solution 2 - Use Elastic's APM to monitor your python code
+## Solution 2 - Use Elastic's APM to monitor your python code
 
 Since I got tired of prints and logs, I wanted a more presentable way of tracking and debugging. So I tried Elastic's APM tool. You need to setup an APM server and then you need to import the APM python library to your code but once you have that setup, it's pretty easy and simple to capture a function's activity without having to code may print or log points to act as breakpoints. 
 
-If you are interested, ![here's](https://toptechtips.github.io/2019-07-08-add_python_code_to_apm/) a detailed tutorial on how you can get this setup: 
+If you are interested, [here](https://toptechtips.github.io/2019-07-08-add_python_code_to_apm/) is a detailed tutorial on how you can get this setup: 
 
 Here's an example:
 
