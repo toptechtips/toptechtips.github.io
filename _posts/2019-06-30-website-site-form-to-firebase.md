@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Create a website form with a Firebase backend (free)
+title: Easy website form with a Firebase backend setup (FREE)
+subtitle: In this guide I show you how you can quickly setup a website form for FREE (of any kind) using Google's Firebase.  
 comments: true
 show-avatar: false
 tags: [firebase, firestore, web form, jekyll, web-development]
