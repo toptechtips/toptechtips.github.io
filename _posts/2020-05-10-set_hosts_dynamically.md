@@ -1,18 +1,21 @@
 ---
 layout: post
 title: Ansible 2 - How to set the host dynamically in  a playbook
+subtitle: A guide on how you can set your host dynamically so that you can re-use your playbook and avoid duplicate playbooks
 comments: true
 show-avatar: false
 tags: [Ansible, host, groups]
 ---
 
-Sometimes we might have a scenario where we wan't an ansible playbook's host to be set dynamically.
+Sometimes we might have a scenario where we want an ansible playbook's host to be set dynamically. 
 We use the add_host module from ansible to do this: https://docs.ansible.com/ansible/latest/modules/add_host_module.html
 
 **Pre-Requisites:**
 Ansible Version: 2.8.1
 
-#### Code (The playbook)
+<br/>
+
+## Code (The playbook)
 
 {% raw %}
 ```yml
@@ -36,7 +39,9 @@ Ansible Version: 2.8.1
 ```
 {% endraw %}
 
-#### Test Inventory
+<br/>
+
+## Test Inventory
 
 a simple inventory which has 1 group "all" that contains 3 hosts "host1", "host2" and "host3":
 
@@ -48,13 +53,15 @@ all:
     host3:
 ```
 
-#### Explanation
+<br/>
+
+## Explanation
 We have 2 playbooks. The **first playbook** is responsible for creating a "temporary" group (only exists during the playbooks run time) and assigning a host to it. We prompt the use to enter a host name and is store in the ```host``` variable. We then add this host name to the "chosen_host" group.
 
 Next we pass that "chosen_host" group to the net playbook which is responsible for actually running the task running
 
 
-running the playbook
+running the playbook:
 
 ```bash
 user@user:~/$ ansible-playbook -i hosts select_single_host.yml 
