@@ -18,15 +18,15 @@ In this post, we look at how we can create a website form that pushes user input
 
 ---
 
-### What do we need to do?
+## What do we need to do?
 Here's a quick diagram of what we're trying to achieve:
 
 
 ![firebase webform design](/img/firebase_webform.jpg)
 
-<br>
+<br/>
 
-### 1. Create a Firebase project
+## 1. Create a Firebase project
 
 To use Firebase, you need a google account. Head over to [Google Accounts](https://support.google.com/accounts/answer/27441?hl=en) (If you don't trust this link, just google: _"Create a google account"_).
 
@@ -44,7 +44,7 @@ And with that, your Firebase project is created.
 
 <br>
 
-### 2. Create a Firebase Database for you project
+## 2. Create a Firebase Database for you project
 
 You will now see your Project on your [Firebase Dashboard](https://console.firebase.google.com/).
 
@@ -61,15 +61,15 @@ You will now see your Project on your [Firebase Dashboard](https://console.fireb
 
 ![Firebase add database](/img/firebase_webform/create_db1.png)
 
-#### Create a Firestore Collection (Optional)
+## Create a Firestore Collection (Optional)
 Firestore is the successor of the earlier version of Firebase so I will use the term "Firebase" and "Firestore" interchangibly.
 
 You can create a collection yourself, by clicking "Add Collection" and adding some fields. But for this post, we don't need to as Firebase allows us push data without any sort of Collection definition/mappings to be defined.
 
-<br>
+<br/>
 
 
-### 3. Connect Firebase to website
+## 3. Connect Firebase to website
 
 Before we create our html we need to make sure that we have the necessary requirements to connect it to Firebase
 - Navigate to **Project Settings** (the cog icon on the left side bar).
@@ -105,8 +105,9 @@ It will look similar to this format:
 {: .box-warning}
 Note that the javascript libraries in the generted script are CDN-based. You can change them if you wish to save the Firebase libraries locally.
 
+<br/>
 
-### 4. Create HTML form
+## 4. Create HTML form
 
 To create the form, we will use:
 - HTML to define the form and its fields
@@ -116,6 +117,8 @@ To create the form, we will use:
 _Note that, to keep things simple we won't implement form validation. We will assume that the user input will always be valid._
 
 **IMPORTANT:** Make sure to include the Firebase-app (core) and Firebase-firestore libraries (included in the full code):
+
+{% raw %}
 ```html
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
@@ -225,10 +228,11 @@ Full Code (For the copy-pasters):
   </script>
 </html>
 ```
+{% endraw %}
 
 <br>
 
-### JavaScript Functions Explained
+## JavaScript Functions Explained
 
 **1. Listen for the button click**
 
@@ -251,6 +255,7 @@ Our form consists of 3 form fields:
 
 After the submit button is pressed the contact_submit() function is fired. This function uses the ID of the form fields to capture the values inside them:
 
+{% raw %}
 ```js
 var contact_submit = function(){
 
@@ -271,6 +276,7 @@ var contact_submit = function(){
 
 }
 ```
+{% endraw %}
 
 **3. Push our input values to Firebase**
 
@@ -289,6 +295,7 @@ The breakdown of the JS function:
 
 Here's a link to [Firebase Docs](https://firebase.google.com/docs/firestore/manage-data/add-data) for more details on the Firebase and Firestore API.
 
+{% raw %}
 ```js
 var push_to_firebase = function(data){
   var db = firebase.firestore();
@@ -310,11 +317,12 @@ var push_to_firebase = function(data){
   });
 }
 ```
+{% endraw %}
 
-<br>
+<br/>
 
 
-### The Finished Form
+## The Finished Form
 
 The finished form should look like this:
 
