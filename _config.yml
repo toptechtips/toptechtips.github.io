@@ -101,7 +101,7 @@ url-pretty: "https://toptechtips.github.io"  # eg. "deanattali.com/beautiful-jek
 
 # Fill in your Google Analytics ID to track your website using GA
 # google_analytics: "UA-142036416-1"
-google_analytics: "G-E9VQV2S6R6"
+# google_analytics: "G-E9VQV2S6R6"
 
 # Google Tag Manager ID
 #gtm: ""
