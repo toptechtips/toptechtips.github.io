@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ERROR - can't subtract offset-naive and offset-aware datetimes
+title: (SOLVED) can't subtract offset-naive and offset-aware datetimes
 comments: true
 subtitle: A good practice when dealing with times in Python
 show-avatar: false
