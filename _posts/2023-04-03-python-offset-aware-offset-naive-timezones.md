@@ -2,7 +2,7 @@
 layout: post
 title: (SOLVED) can't subtract offset-naive and offset-aware datetimes
 comments: true
-subtitle: A good practice when dealing with times in Python
+subtitle: How to solve datetime offset in python, and what good practice you should be doing when dealing with datetime in python. 
 show-avatar: false
 tags: [python, datetime, offset-aware, offset-naive]
 ---
