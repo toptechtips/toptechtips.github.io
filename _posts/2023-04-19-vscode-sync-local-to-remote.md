@@ -78,4 +78,5 @@ Now we check that the files have been synced to the remote server:
 
 ## Potential Issues you might run into
 - **Permission Denied error**: If you run into permission denied errors, make sure to check your remotePath in the ```sftp.json``` and make sure it's a folder that your username access has write access to. I made the classic mistake of setting remotePath to /dev when I needed root access to do that.
-- **SSH authentication error**: I had this issue before where I would set the privateKeyPath field to my private key file. I couldn't get it to work, so I just gave up and stuck to basic password authentication.
+- **SSH authentication error**: Make sure to specify the agent, and sshConfigPath and also privateKeyPath (unless the private key is already specified in your ssh config file) 
+- **Deleted File changes not being reflected automatically** - This can be quite a dangerous feature, but if you're happy with files being auto deleted on your remote then the ```watcher.autoDelete``` will do the trick
