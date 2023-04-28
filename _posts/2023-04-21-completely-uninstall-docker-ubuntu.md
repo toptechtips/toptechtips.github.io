@@ -26,10 +26,10 @@ sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd
 ```
 
-It's that easy - I hope this helps!
+And with that, you've completely removed docker from your Ubuntu OS... It's that easy - I hope this helps!
 
 **Resources:**
-- https://docs.docker.com/engine/install/ubuntu/
+- [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
 
 
 
