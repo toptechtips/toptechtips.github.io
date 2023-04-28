@@ -2,7 +2,7 @@
 layout: post
 title: (SOLVED) VSCode SFTP SSH Authentication Error in Linux 
 comments: true
-subtitle: This guide aims to give a variety of solutions to the ssh authentication error that you might come across when using VSCode'#'s SFTP extension   
+subtitle: This guide aims to give a variety of solutions to the ssh authentication error that you might come across when using VSCode's SFTP extension   
 show-avatar: false
 tags: [visual studio code, vscode, sftp, remote ssh, vscode extensions, Linux]
 ---
