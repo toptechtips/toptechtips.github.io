@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (SOLVED) can't subtract offset-naive and offset-aware datetimes
+title: (SOLVED) - cant subtract offset-naive and offset-aware datetimes
 comments: true
 subtitle: How to solve datetime offset in python, and what good practice you should be doing when dealing with datetime in python. 
 show-avatar: false
