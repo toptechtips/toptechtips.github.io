@@ -88,11 +88,13 @@ Here's the result - As expected, you can see that they are **ordered based on***
 
 <br/>
 
-## Solution 1 - Using Max aggregation
+## Solution 1 - Using Max aggregation with parent aggregation order key
 
 1. We get the latest date value of each bucket using another aggregation called [max aggregation](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/search-aggregations-metrics-max-aggregation.html). 
 2. We can use the ```order``` key on our terms aggregation (job_id) to sort our buckets.
 3. We use the generated 'latest date' in our terms aggregation's order key.
+
+**IMPORANT**: Be wary that your particular parent aggregation (for me, it's my terms aggregation) might not have an "order" key so use solution 2 for scenarios like this. I haven't used all of Elasticsearch's aggregations, so I'm not sure I can't say for sure.
 
 {% raw %}
 
