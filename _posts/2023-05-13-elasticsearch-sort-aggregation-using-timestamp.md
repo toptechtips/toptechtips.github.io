@@ -130,7 +130,7 @@ And as for the result, you can see that the order of our aggregated buckets **is
 
 <br/>
 
-## Solution 2 - Using Bucket Sort
+## Solution 2 - Using Bucket Sort 
 
 Personally I much **prefer the first solution since it's a lot simpler**, but Elasticsearch's [bucket sort](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/search-aggregations-pipeline-bucket-sort-aggregation.html) is another great way to sort our buckets. **Bucket sort is much more powerful** and can **combine a variety of different sorting requirements**, but for our use case solution 1 is really all we need.
 
