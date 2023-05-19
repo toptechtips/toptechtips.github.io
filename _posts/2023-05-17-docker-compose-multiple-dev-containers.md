@@ -291,8 +291,6 @@ If you don't need to use docker compose and only want to do development on ONE c
 - VS Code will automatically handle the creation or running of your dev container
 - All project code changes or updates you make within the container are synced with your local copy  
 
-![docker-single](../img/docker-compose/docker-single.png)
-
 When you open your project on VS Code, the IDE will prompt you if you want to open it in dev container mode 
 
 ![dev-containers](../img/docker-compose/dev-containers.png)
