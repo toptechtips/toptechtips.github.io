@@ -61,7 +61,7 @@ You will now see your Project on your [Firebase Dashboard](https://console.fireb
 
 ![Firebase add database](/img/firebase_webform/create_db1.png)
 
-## Create a Firestore Collection (Optional)
+### 2a. Create a Firestore Collection (Optional)
 Firestore is the successor of the earlier version of Firebase so I will use the term "Firebase" and "Firestore" interchangibly.
 
 You can create a collection yourself, by clicking "Add Collection" and adding some fields. But for this post, we don't need to as Firebase allows us push data without any sort of Collection definition/mappings to be defined.
