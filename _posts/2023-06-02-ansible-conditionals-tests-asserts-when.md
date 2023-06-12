@@ -101,7 +101,6 @@ If you run the playbook example below, it will stop at task 2 because it will fa
 
 
 ### Is a variable is defined or registered or undefined
-<!-- delme - https://www.shellhacks.com/ansible-when-variable-is-defined-exists-empty-true/ -->
 
 To test if a variable is defined (or not), we simply need to use the ```defined``` and ```undefined``` keywords.
 
@@ -186,7 +185,6 @@ Variable ```name``` is **not defined**, results in the task running:
 <br/>
 
 ### Is a variable is true or false
-<!-- delme - https://www.shellhacks.com/ansible-when-variable-is-defined-exists-empty-true/ -->
 
 You can use the simple ```is``` or ```is not``` in your tests. You can use something like ```var | bool == True``` - But I **be wary** because it will **result in True** even if the value is ```true``` or ```"true"```.
 
@@ -246,11 +244,6 @@ This [stackOverflow Answer](https://stackoverflow.com/questions/39983695/what-is
 - ```{}``` an empty dict
 - ```""``` and empty string
 
-
-
-<!-- delme - https://www.shellhacks.com/ansible-when-variable-is-defined-exists-empty-true/ -->
-<!-- delme - https://stackoverflow.com/questions/36912726/ansible-how-to-test-that-a-registered-variable-is-not-empty -->
-<!-- delme - https://stackoverflow.com/questions/60304415/ansible-how-to-check-if-a-variable-is-not-null -->
 
 #### Check if string / dict / array empty or None
 
@@ -326,15 +319,9 @@ Using the Jinja ```length``` filter.
 {% endraw %}
 
 
-<!-- delme - https://serverfault.com/questions/949766/ansible-empty-dictionary-conditional
-https://stackoverflow.com/questions/54709899/cannot-iterate-through-a-dictionary-how-to-check-if-its-empty
-https://stackoverflow.com/questions/47709563/check-if-arrays-are-defined-and-not-empty-in-ansible
-https://itecnote.com/tecnote/ansible-how-to-skip-the-loop-if-the-list-is-empty/ -->
-
 <br/>
 
 ### Is variable equal to a string
-<!-- delme - https://stackoverflow.com/questions/27335204/ansible-check-if-variable-equals-string -->
 
 {% raw %}
 
@@ -438,9 +425,6 @@ In this example we use ```regex``` for validating if a string is a valid email o
 <br/>
 
 ### Does the item exist in list (or is not in list)
-<!-- delme - https://stackoverflow.com/questions/58708295/ansible-check-if-item-is-in-the-list
-https://www.reddit.com/r/ansible/comments/2wsosa/how_can_i_use_when_item_in_list_as_a_conditional/
-https://stackoverflow.com/questions/56469467/how-to-check-few-keywords-in-a-string-and-assert-if-not-present-in-ansible-tasks -->
 
 Here we check if some items are in (or not in) a list
 
@@ -476,9 +460,6 @@ Here we check if some items are in (or not in) a list
 <br/>
 
 ### Does the key or value exists in dictionary
-<!-- delme - https://stackoverflow.com/questions/47523815/ansible-how-to-check-if-dictionary-has-at-least-one-specified-value
-https://serverfault.com/questions/857973/is-there-a-way-to-check-that-a-dictionary-key-is-not-defined-in-ansible-task -->
-
 
 {% raw %}
 
@@ -531,7 +512,6 @@ Quite simply:
 Here we look at different scenarios that use conditionals and tests!
 
 ### Scenario - Assert Check two string keywords or multiple test conditions
-<!-- delme - https://stackoverflow.com/questions/69771828/ansible-assert-check-two-strings-or-condition-in-output -->
 
 Asserts that "ford" AND "focus" substring is found in the "model" variable. Assert will return success when all conditions are correct 
 
@@ -643,7 +623,6 @@ Note:
 
 
 ### Scenario - Assert failure when source list holds more values than target list
-<!-- delme - https://stackoverflow.com/questions/75018976/ansible-assert-failure-when-source-list-holds-more-values-than-target-list -->
 
 In this scenario we want to make compare 2 lists and make sure that the target list's length is equal to the source list's length:
 
@@ -670,8 +649,6 @@ In this scenario we want to make compare 2 lists and make sure that the target l
 <br/>
 
 ### Scenario - Check if for a value match in list of dictionary/objects
-<!-- https://serverfault.com/questions/1031041/ansible-check-if-variable-exists-in-attribute-list
-https://serverfault.com/questions/996010/how-in-ansible-use-in-for-nested-lists-in-a-variable -->
 
 We have a scenario where we have a list of exempt host names (a list of objects/dictionaries). We want our task to only run when the current ```ansible_hostname``` is not on that list - This is a scenario where we want to find out if a value exists in a list of dictionaries.
 
@@ -715,7 +692,6 @@ We use the ```selectattr``` [Jinja Filter](https://jinja.palletsprojects.com/en/
 
 
 ### Scenario - Assert fail when a string is found only once in a string | Using regex_findall() to give all instances of a subtring
-<!-- delme - https://stackoverflow.com/questions/68870000/assert-module-is-it-possible-to-fail-if-string-is-found-only-once -->
 
 In our example, the word "test" is in our string 3 times. We assert that if the string "test" is in some_text more than once, it's a fail, otherwise a success: 
 
@@ -781,7 +757,6 @@ ok: [docker-server] => {
 
 
 ### Scenario - Ansible Ignore errors in tasks and fail at end of the playbook if any tasks had errors
-<!-- delme - https://stackoverflow.com/questions/38876487/ansible-ignore-errors-in-tasks-and-fail-at-end-of-the-playbook-if-any-tasks-had -->
 
 We want to run a block of tasks (Task 1, Task 2 and Task 3) and if any of these tasks fail we still want all the other tasks to be executed. Instead, we want the "failure" event to happen at the end.
 
@@ -858,7 +833,7 @@ You can see that Task 2 fails, Task 1 and 3 still ran fine. Then the playbook fa
 <br/>
 
 ### Scenario - only show assert error output and not assert success
-<!-- delme - https://stackoverflow.com/questions/66386133/suppress-assert-output-in-ansible -->
+
 In this scenario we emulate the results of 3 tasks in a results' dictionary. We want to loop through each result item and assert that the value of the key "failed" == false. If the value is true, then assert false. 
 
 We ONLY want to see the message output of the failed assert, we don't want to show any output from the successful asserts. For this example task item 1 and task item 3 will be a successful assert whilst task item 2 will NOT:
