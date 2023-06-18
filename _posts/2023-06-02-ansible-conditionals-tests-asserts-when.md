@@ -12,9 +12,10 @@ For some people a **simple playbook is not always practical**. So you find that 
 
 However, because of this - I find it **quite tricky** to understand and use the **logic techniques** and the different **data types** that can potentially get passed around in my playbooks because **Ansible uses YAML template and Jinja**. So I wrote this guide to help your through the hassle of that!
 
-**Pre-requisites**
-- Ansible core 2.14
-- Python 3 for Ansible host and any managed hosts
+**Pre-requisites & Setup**
+- I'm using ```ansible-core 2.14```
+- Ansible Host is running Python 3 and Managed/remote host is running Python 2.7
+- Ansible Host & Managed/remote host is using Ubuntu
 
 > You can use a different version of python or Ansible core but just be wary that some of the implementations on this document might not work on much older versions of Ansible or require a different method
 
