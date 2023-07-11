@@ -36,9 +36,13 @@ layout: base
       {% endif %}
 
       <article role="main" class="blog-post">
-        <h3>Table of Contents</h3>
-        {% include toc.html html=content %}
-        <br>
+        <div class="sidenav">
+          <h3>Table of Contents</h3>
+          <div class="toc-wrapper">
+          {% include toc.html html=content submenu_class="submenu_class" item_class="item_class" class="toc" %}
+          </div>
+        </div>
+  
         {{ content }}
       </article>
 
