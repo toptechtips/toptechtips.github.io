@@ -2,7 +2,7 @@
 layout: post
 title: Running Your Ansible Playbook and Tasks in Parallel and other strategies
 comments: true
-subtitle: The focus of this guide is about running your ansible playbook and tasks in parallel as opposed to async tasks
+subtitle: A guide about running your ansible PLAYBOOKS in parallel and other playbook execution strategies. Along with more detailed execution strategies like run_once, throttle and forks
 show-avatar: false
 toc: true
 tags: [ansible]
@@ -11,7 +11,7 @@ tags: [ansible]
 
 We look at how you can execute your Ansible **playbooks in parallel** as well as other playbook **execution strategies**. 
 
-This guide focuses more on running your playbooks in parallel, However, **If** you are looking to add some *parallelism or asynchronous-ness* within your **TASKS** then [this]() is the guide for that.
+This guide focuses more on running your playbooks in parallel, However, **If** you are looking to add some *parallelism or asynchronous-ness* within your **TASKS** then [this](https://toptechtips.github.io/2019-07-09-ansible_run_playbooks_tasks_in_parallel/) is the guide for that.
 
 <br/>
 
