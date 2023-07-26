@@ -100,7 +100,6 @@ If you want to run **2 or more different tasks** in your playbook in **parallel*
 It's important to note that Ansible will **fire-and-forget** your task meaning if you don't have any synchronous task after, The playbook will exit (more on this in Example 1). 
 
 ![async](/img/ansible-parallel/fast-async.png)
- talk about experiments with changed, and finished -> task is considered complete even with changed - https://stackoverflow.com/questions/49033727/ansible-async-module-with-poll-0-doesnt-finish-the-task
 
 <br/>
 
