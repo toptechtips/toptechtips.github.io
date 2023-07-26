@@ -7,6 +7,12 @@ show-avatar: false
 tags: [ansible, ansible poll, ansible async_status, ansible parallelization, devops, software-development]
 ---
 
+<br/>
+
+🆕 **I've written a newer version of this article - [2023 UPDATE VERSION - Here](https://toptechtips.github.io/2023-07-02-ansible-async-parallel/)**
+
+<br/>
+
 In this post we will look at how we can run our Ansible tasks in parallel. We will look at Ansible's ```async``` and ```poll``` attribute to achieve this. We will also look at how we can run a iterative task (iterates through a list/loop) in parallel.
 
 
