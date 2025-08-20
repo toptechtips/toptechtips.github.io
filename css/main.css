@@ -829,8 +829,12 @@ html {
   display: list-item;
   text-align: -webkit-match-parent;
   color: #404040 !important;
+}
+
+.toc > li > a {
   font-weight: 600 !important;
 }
+
 
 .toc ul {
   /* padding-left: 2px; */
@@ -839,7 +843,7 @@ html {
   color: #404040 !important;
 }
 
-.toc a {
+.toc li ul a {
   color: #404040 !important;
 }
 
