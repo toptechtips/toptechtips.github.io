@@ -4,17 +4,22 @@ title: Running Your Ansible Playbook Tasks in parallel and other Asynchronous Ac
 comments: true
 subtitle: A Guide on using Ansible's async to parallelize your ansible playbook tasks and running your tasks asynchronously
 show-avatar: false
+image: /img/background_pics/ansible-parallel.png
 toc: true
 tags: [ansible]
 ---
 
+
+<!-- ![additiona-setup](/img/background_pics/ansible-parallel.png) -->
+
+
 In this guide we will look at how we can run parallel and asynchronous tasks within your playbooks in order to run your playbook in the most efficient way possible!
 
 > This post is a more detailed version of [this article](https://toptechtips.github.io/2019-07-09-ansible_run_playbooks_tasks_in_parallel/) about using Ansible's ```async``` to run your tasks in parallel.
-
+ 
 <br/>
 
-**Pre-requisites & Setup**
+## Pre-requisites & Setup
 - I'm using ```ansible-core 2.14```
 - Ansible Host is running Python 3 on Ubuntu
 - Managed/remote host(s) is running Python 2.7 on Ubuntu
